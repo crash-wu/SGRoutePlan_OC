@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SGRoutePlan_OC_Example' do
+  pod 'SGRoutePlan_OC', :path => '../'
+
+  target 'SGRoutePlan_OC_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
