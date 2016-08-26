@@ -12,8 +12,7 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* SGRoutePlan_OCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* SGRoutePlan_OCAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* SGRoutePlan_OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* SGRoutePlan_OCViewController.m */; };
+		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -21,8 +20,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		7F61E99AD375FF65343EB53C /* Pods_SGRoutePlan_OC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07078403C4CCA4684993C3D /* Pods_SGRoutePlan_OC_Example.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		ACDA5580ECCA0653E82EBF52 /* Pods_SGRoutePlan_OC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751A64A0325D3E6BA13AEA8E /* Pods_SGRoutePlan_OC_Tests.framework */; };
+		98E2F4821D6FF3690014CCAF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F4811D6FF3690014CCAF /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		1B34BBDAFDE4A95CB79BD884 /* Pods-SGRoutePlan_OC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGRoutePlan_OC_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGRoutePlan_OC_Example/Pods-SGRoutePlan_OC_Example.release.xcconfig"; sourceTree = "<group>"; };
-		29D7659685F5911A6F287823 /* Pods-SGRoutePlan_OC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGRoutePlan_OC_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGRoutePlan_OC_Tests/Pods-SGRoutePlan_OC_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SGRoutePlan_OC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGRoutePlan_OC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,10 +43,8 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* SGRoutePlan_OC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SGRoutePlan_OC-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* SGRoutePlan_OCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGRoutePlan_OCAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* SGRoutePlan_OCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGRoutePlan_OCAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* SGRoutePlan_OCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGRoutePlan_OCViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* SGRoutePlan_OCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGRoutePlan_OCViewController.m; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* SGRoutePlan_OC_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGRoutePlan_OC_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,12 +54,12 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		751A64A0325D3E6BA13AEA8E /* Pods_SGRoutePlan_OC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGRoutePlan_OC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A6FEBD3B270CD3D13D98B8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		98E2F4801D6FF3690014CCAF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		98E2F4811D6FF3690014CCAF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		B07078403C4CCA4684993C3D /* Pods_SGRoutePlan_OC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGRoutePlan_OC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DE466996E8C4D7FE39219B /* SGRoutePlan_OC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGRoutePlan_OC.podspec; path = ../SGRoutePlan_OC.podspec; sourceTree = "<group>"; };
 		CCEADFA9D18B083812E7745E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D0CE1EE50792A0D1489DEEAB /* Pods-SGRoutePlan_OC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGRoutePlan_OC_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGRoutePlan_OC_Example/Pods-SGRoutePlan_OC_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DB272C5EF9D1C2B917EFB637 /* Pods-SGRoutePlan_OC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGRoutePlan_OC_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGRoutePlan_OC_Tests/Pods-SGRoutePlan_OC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +81,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				ACDA5580ECCA0653E82EBF52 /* Pods_SGRoutePlan_OC_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,13 +124,12 @@
 		6003F593195388D20070C39A /* Example for SGRoutePlan_OC */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* SGRoutePlan_OCAppDelegate.h */,
-				6003F59D195388D20070C39A /* SGRoutePlan_OCAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* SGRoutePlan_OCViewController.h */,
-				6003F5A6195388D20070C39A /* SGRoutePlan_OCViewController.m */,
+				6003F59C195388D20070C39A /* AppDelegate.h */,
+				6003F59D195388D20070C39A /* AppDelegate.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				98E2F4801D6FF3690014CCAF /* MapViewController.h */,
+				98E2F4811D6FF3690014CCAF /* MapViewController.m */,
 			);
 			name = "Example for SGRoutePlan_OC";
 			path = SGRoutePlan_OC;
@@ -187,8 +180,6 @@
 			children = (
 				D0CE1EE50792A0D1489DEEAB /* Pods-SGRoutePlan_OC_Example.debug.xcconfig */,
 				1B34BBDAFDE4A95CB79BD884 /* Pods-SGRoutePlan_OC_Example.release.xcconfig */,
-				DB272C5EF9D1C2B917EFB637 /* Pods-SGRoutePlan_OC_Tests.debug.xcconfig */,
-				29D7659685F5911A6F287823 /* Pods-SGRoutePlan_OC_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -276,7 +267,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -305,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGRoutePlan_OC_Tests/Pods-SGRoutePlan_OC_Tests-resources.sh\"\n";
+			shellScript = "";
 			showEnvVarsInLog = 0;
 		};
 		2C669B95FC981236CBAE8245 /* [CP] Check Pods Manifest.lock */ = {
@@ -350,7 +340,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGRoutePlan_OC_Tests/Pods-SGRoutePlan_OC_Tests-frameworks.sh\"\n";
+			shellScript = "";
 			showEnvVarsInLog = 0;
 		};
 		AFF80ADDA2131D8DD58E3F5B /* [CP] Copy Pods Resources */ = {
@@ -390,8 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* SGRoutePlan_OCAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* SGRoutePlan_OCViewController.m in Sources */,
+				98E2F4821D6FF3690014CCAF /* MapViewController.m in Sources */,
+				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,7 +531,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB272C5EF9D1C2B917EFB637 /* Pods-SGRoutePlan_OC_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -565,7 +554,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29D7659685F5911A6F287823 /* Pods-SGRoutePlan_OC_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

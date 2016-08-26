@@ -1,0 +1,6 @@
+framework module SKSTableView {
+  umbrella header "SKSTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
