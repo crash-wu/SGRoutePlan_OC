@@ -63,7 +63,7 @@
     self.poiKey.level = 14;
     
     [SVProgressHUD showWithStatus:@"正在请求"];
-    [[SouthgisTdtMapService shareInstance] poiSearch:self.poiKey success:^(NSArray<TdtPOIResult *> * _Nullable array) {
+    [[SGRoutePlanService shareInstance] poiSearch:self.poiKey success:^(NSArray<TdtPOIResult *> * _Nullable array) {
         [SVProgressHUD showSuccessWithStatus:@"成功"];
         
     } failed:^(id obj) {

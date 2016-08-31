@@ -5,15 +5,20 @@
 //  Copyright © 2016年 crash. All rights reserved.
 //
 
-#import "SouthgisTdtMapService.h"
+#import "SGRoutePlanService.h"
 #import "SGXMLParser.h"
+
+/**
+ *  自定义 Error 标识符
+ */
+static NSString * _Nonnull const SouthgisErrorDomain;
 
 //天地图web 搜索服务接口(POI,地名地址，公交路线==)
 #define TIANDITU_SEARCH_URL @"http://map.tianditu.com/query.shtml"
 
 #define GET_TIANDITU_SEARCH_URL(searchType,postStr) [NSString stringWithFormat:@"%@?type=%@&postStr=%@",TIANDITU_SEARCH_URL,searchType,postStr] //天地图请求接口(POI,公交，驾车)
 
-@implementation SouthgisTdtMapService
+@implementation SGRoutePlanService
 
 /**
  *  @author crash         crash_wu@163.com   , 16-08-26 15:08:22
@@ -21,9 +26,9 @@
  *  @brief  单例
  *
  */
-+(instancetype) shareInstance{
++(nonnull instancetype) shareInstance{
     
-    static SouthgisTdtMapService *instance ;
+    static SGRoutePlanService *instance ;
     static dispatch_once_t oneToken;
     dispatch_once(&oneToken, ^{
         instance = [[super alloc] init];
@@ -41,7 +46,10 @@
  *  @param success       搜索成功返回Block
  *  @param failed        失败block
  */
--(void)poiSearch:(nullable TdtPOISearchKeyWord *)keyWordEntity success:(void(^) (NSArray<TdtPOIResult *> *_Nullable array ))success failed:(FailedBlock)failed{
+-(void)poiSearch:
+(nullable TdtPOISearchKeyWord *)keyWordEntity success:
+(nonnull void(^) (NSArray<TdtPOIResult *> *_Nullable array ))success failed:
+(nonnull FailedBlock)failed{
     
     NSString *postStr = [[keyWordEntity yy_modelToJSONString] stringByAddingPercentEncodingWithAllowedCharacters: [NSCharacterSet URLHostAllowedCharacterSet]];
   //  postStr=[self p_stringByURLEncode:postStr];
@@ -49,8 +57,7 @@
     NSString *urlStr = GET_TIANDITU_SEARCH_URL(@"query",postStr);
     
    [ [[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:urlStr] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        DLog(@"请求完毕\n\n");
+
         if (error) {
             if (failed) {
                 failed(error);
@@ -107,7 +114,10 @@
  *  @param success      路线请求成功bolck
  *  @param fail         路线请求失败bolck
  */
--(void)carLineSearch :(nullable CarLineSearch *)driverEntity success:(void(^)(NSArray<CarLine *> * _Nullable array))success andFail:(FailedBlock)fail{
+-(void)carLineSearch :
+(nullable CarLineSearch *)driverEntity success:
+(nonnull void(^)(NSArray<CarLine *> * _Nullable array))success andFail:
+(nonnull FailedBlock)fail{
     
     NSString *postStr = [driverEntity yy_modelToJSONString];
  //   postStr=[self p_stringByURLEncode:postStr];
@@ -117,8 +127,7 @@
     
     [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:urlStr] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
-        
-        DLog(@"请求完毕\n\n");
+
         if (error) {
             if (fail) {
                 fail(error);
@@ -185,7 +194,10 @@
  *  @param success 路线请求成功bolck
  *  @param failed  路线请求失败bolck
  */
--(void)busLineSearch:(nullable BusLineSearch * ) entity success:(void(^) ( NSArray<BusLine *> * _Nullable array ))success failed:(FailedBlock)failed{
+-(void)busLineSearch:
+(nullable BusLineSearch * ) entity success:
+(nonnull void(^) ( NSArray<BusLine *> * _Nullable array ))success failed:
+(nonnull FailedBlock)failed{
     
     NSString *postStr = [entity yy_modelToJSONString];
  //   postStr=[self p_stringByURLEncode:postStr];
@@ -194,7 +206,7 @@
 
     [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:urlStr] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
-        DLog(@"请求完毕\n\n");
+
         if (error) {
             if (failed) {
                 failed(error);

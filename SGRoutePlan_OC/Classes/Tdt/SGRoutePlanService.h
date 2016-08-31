@@ -6,13 +6,30 @@
 //  Copyright © 2016年 crash. All rights reserved.
 //
 
-#import "SouthgisBaseMapService.h"
+
 #import "TdtPOIResult.h"
 #import "CarLine.h"
 #import "BusLine.h"
 #import "BusLineSearch.h"
 #import "CarLineSearch.h"
 #import "TdtPOISearchKeyWord.h"
+#import <YYModel/YYModel.h>
+
+/**
+ *  Handler处理失败时调用的Block
+ */
+typedef  void  ( ^FailedBlock )(id obj);
+
+
+
+/**
+ *  自定义 Error Code
+ */
+typedef NS_ENUM(NSInteger, SouthgisErrorCode) {
+    BaiduWebServerErrorInvalidServiceType   = -8001,  // 无效的服务类型
+    BaiduWebServerErrorNullResponse         = -8002,  // 空响应报文
+    BaiduWebServerErrorInvalidResponseData  = -8003,  // 无效的响应数据
+};
 
 
 /**
@@ -20,7 +37,7 @@
  *
  *  @brief  天地图POI搜索，公交，驾车路线搜索类
  */
-@interface SouthgisTdtMapService : NSObject
+@interface SGRoutePlanService : NSObject
 
 /**
  *  @author crash         crash_wu@163.com   , 16-08-26 15:08:22
@@ -28,7 +45,7 @@
  *  @brief  单例
  *
  */
-+(instancetype) shareInstance;
++(nonnull instancetype) shareInstance;
 
 
 /**
@@ -40,7 +57,10 @@
 *  @param success       搜索成功返回Block
 *  @param failed        失败block
 */
--(void)poiSearch:(nullable TdtPOISearchKeyWord *)keyWordEntity success:(void(^) (NSArray<TdtPOIResult *> *_Nullable array ))success failed:(FailedBlock)failed;
+-(void)poiSearch:
+(nullable TdtPOISearchKeyWord *)keyWordEntity success:
+(nonnull void(^) (NSArray<TdtPOIResult *> *_Nullable array ))success failed:
+(nonnull FailedBlock)failed;
 
 
 /**
@@ -52,7 +72,10 @@
  *  @param success      路线请求成功bolck
  *  @param fail         路线请求失败bolck
  */
--(void)carLineSearch :(nullable CarLineSearch *)driverEntity success:(void(^)(NSArray<CarLine *> * _Nullable array))success andFail:(FailedBlock)fail;
+-(void)carLineSearch :
+(nullable CarLineSearch *)driverEntity success:
+(nonnull void( ^)(NSArray<CarLine *> * _Nullable array))success andFail:
+(nonnull FailedBlock)fail;
 
 
 /**
@@ -64,6 +87,9 @@
  *  @param success 路线请求成功bolck
  *  @param failed  路线请求失败bolck
  */
--(void)busLineSearch:(nullable BusLineSearch *)entity success: (void(^) (NSArray<BusLine *> * _Nullable array ))success failed:(FailedBlock)failed;
+-(void)busLineSearch:
+(nullable BusLineSearch *)entity success:
+(nonnull void(^) (NSArray<BusLine *> * _Nullable array ))success failed:
+(nonnull FailedBlock)failed;
 
 @end
