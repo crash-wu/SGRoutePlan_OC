@@ -1,6 +1,5 @@
 //
 //  SouthgisTdtMapService.m
-//  TianDituFramework
 //
 //  Created by 吴小星 on 16/3/29.
 //  Copyright © 2016年 crash. All rights reserved.
@@ -16,7 +15,22 @@
 
 @implementation SouthgisTdtMapService
 
-
+/**
+ *  @author crash         crash_wu@163.com   , 16-08-26 15:08:22
+ *
+ *  @brief  单例
+ *
+ */
++(instancetype) shareInstance{
+    
+    static SouthgisTdtMapService *instance ;
+    static dispatch_once_t oneToken;
+    dispatch_once(&oneToken, ^{
+        instance = [[super alloc] init];
+    });
+    
+    return instance;
+}
 
 /**
  *  @author crash         crash_wu@163.com   , 16-08-26 11:08:49
@@ -96,7 +110,7 @@
 -(void)carLineSearch :(nullable CarLineSearch *)driverEntity success:(void(^)(NSArray<CarLine *> * _Nullable array))success andFail:(FailedBlock)fail{
     
     NSString *postStr = [driverEntity yy_modelToJSONString];
-    postStr=[self p_stringByURLEncode:postStr];
+ //   postStr=[self p_stringByURLEncode:postStr];
     
     NSString *urlStr = GET_TIANDITU_SEARCH_URL(@"search",postStr);
 
@@ -174,7 +188,7 @@
 -(void)busLineSearch:(nullable BusLineSearch * ) entity success:(void(^) ( NSArray<BusLine *> * _Nullable array ))success failed:(FailedBlock)failed{
     
     NSString *postStr = [entity yy_modelToJSONString];
-    postStr=[self p_stringByURLEncode:postStr];
+ //   postStr=[self p_stringByURLEncode:postStr];
     
     NSString *urlStr = GET_TIANDITU_SEARCH_URL(@"busline",postStr);
 

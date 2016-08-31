@@ -4,7 +4,7 @@ FRAMEWORK_SEARCH_PATHS = $(inherited) $(HOME)/Library/SDKs/ArcGIS/iOS "$PODS_CON
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/SGRoutePlan_OC/SGRoutePlan_OC.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SGTileLayer/SGTileLayer.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SKSTableView/SKSTableView.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD/SVProgressHUD.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/YYModel/YYModel.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -l"ObjC" -l"c++" -framework "ArcGIS" -framework "SGRoutePlan_OC" -framework "SGTileLayer" -framework "SKSTableView" -framework "SVProgressHUD" -framework "YYModel"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"ObjC" -l"c++" -framework "ArcGIS" -framework "SGRoutePlan_OC" -framework "SGTileLayer" -framework "SKSTableView" -framework "SVProgressHUD" -framework "YYModel"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

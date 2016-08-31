@@ -8,8 +8,6 @@
 
 #import "SGTileLayerUtil.h"
 
-static SGTileLayerUtil *_instance;
-
 @implementation SGTileLayerUtil
 
 
@@ -22,12 +20,12 @@ static SGTileLayerUtil *_instance;
  */
 +(nonnull instancetype)sharedInstance
 {
-
+    static SGTileLayerUtil *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _instance = [[self alloc] init];
+        instance = [[self alloc] init];
     });
-    return _instance;
+    return instance;
 }
 
 /**
@@ -41,6 +39,7 @@ static SGTileLayerUtil *_instance;
  */
 -(void)loadTdtTileLayer:(WMTSLayerTypes) tdtLayerType  andMapView :(nonnull AGSMapView * ) mapView{
     
+    
     [mapView removeMapLayerWithName:@"tiandity_layer"];
     [mapView removeMapLayerWithName:@"tiandity_layer_annotation"];
     NSError *error;
@@ -50,6 +49,7 @@ static SGTileLayerUtil *_instance;
     if(layer != nil){
         
         [mapView addMapLayer:layer withName:@"tiandity_layer"];
+
     }
 
     WMTSLayerTypes  annotation = WMTS_VECTOR_ANNOTATION_CHINESE_2000 ;
@@ -91,7 +91,7 @@ static SGTileLayerUtil *_instance;
 
     SouthgisTdt_TileLayer *annotationLayer = [[SouthgisTdt_TileLayer alloc]initWithLayerType:annotation error:&error];
     if (annotationLayer != nil){
-        
+
         [mapView addMapLayer:annotationLayer withName:@"tiandity_layer_annotation"];
     }
     
@@ -154,6 +154,35 @@ static SGTileLayerUtil *_instance;
 -(NSInteger)currentLevel:(nonnull SouthgisTdt_TileLayer *)tdtLayer{
     
     return [tdtLayer currentLevel];
+}
+
+
+
+
+
+
+/**
+ *  @author crash         crash_wu@163.com   , 16-08-26 16:08:49
+ *
+ *  @brief  将地图移到中国视图范围(天地图 墨卡托坐标系)
+ *
+ *  @param mapView 地图
+ */
+-(void) zoomToChineseWebspatialReference:(nonnull AGSMapView *) mapView{
+    
+    [mapView zoomToEnvelope:[[AGSEnvelope alloc] initWithXmin:7800000.0 ymin:44000.0 xmax:15600000.0 ymax:7500000.0 spatialReference:mapView.spatialReference ] animated: true];
+}
+
+/**
+ *  @author crash         crash_wu@163.com   , 16-08-26 16:08:28
+ *
+ *  @brief 将地图移到中国视图范围(天地图国家坐标系)
+ *
+ *  @param mapView 地图
+ */
+-(void) zoomToChineseEnvelopeCGCS2000:(nonnull AGSMapView *)mapView{
+    
+    [mapView zoomToEnvelope:[[AGSEnvelope alloc] initWithXmin:80.76016586869 ymin:8.37639403682149 xmax:145.522396132932 ymax:52.9004273434877 spatialReference:mapView.spatialReference] animated:true];
 }
 
 @end

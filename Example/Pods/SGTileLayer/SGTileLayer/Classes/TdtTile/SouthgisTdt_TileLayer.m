@@ -13,10 +13,11 @@
 
     WMTSLayerTypes _layerType;
 }
-
+//@property (nonatomic, strong) SouthgisTdt_LayerInfo* layerInfo;
 @end
 
 @implementation SouthgisTdt_TileLayer
+
 
 
 /**
@@ -41,13 +42,13 @@
         
         
         AGSSpatialReference* sr = [AGSSpatialReference spatialReferenceWithWKID:_layerInfo.srid];
-        _fullEnvelope = [[AGSEnvelope alloc] initWithXmin:_layerInfo.xMin
+        self.sgFullEnvelope = [[AGSEnvelope alloc] initWithXmin:_layerInfo.xMin
                                                      ymin:_layerInfo.yMin
                                                      xmax:_layerInfo.xMax
                                                      ymax:_layerInfo.yMax
                                          spatialReference:sr];
         
-        _tileInfo = [[AGSTileInfo alloc]
+        self.sgTileInfo = [[AGSTileInfo alloc]
                      initWithDpi:_layerInfo.dpi
                      format :@"PNG"
                      lods:_layerInfo.lods
@@ -55,7 +56,7 @@
                      spatialReference :sr
                      tileSize:CGSizeMake(_layerInfo.tileWidth,_layerInfo.tileHeight)
                      ];
-        [_tileInfo computeTileBounds:self.fullEnvelope];
+        [self.sgTileInfo computeTileBounds:self.sgFullEnvelope];
         
         [super layerDidLoad];
         
@@ -78,8 +79,8 @@
         }
         else{
             Southgis_WMTSLayerOperation *operation = [[Southgis_WMTSLayerOperation alloc]initWithTileKey:key TiledLayerInfo:_layerInfo target:weakSelf action:@selector(didFinishOperation:)];
-            
-            [_requestQueue addOperation:operation];
+
+            [weakSelf.requestQueue addOperation:operation];
         }
     }];
     
@@ -88,7 +89,7 @@
 
 - (void)cancelRequestForKey:(AGSTileKey *)key{
     //Find the Southigs_TiledServiceLayerOperation object for this key and cancel it
-    for(NSOperation* op in _requestQueue.operations){
+    for(NSOperation* op in self.requestQueue.operations){
         if( [op isKindOfClass:[Southgis_WMTSLayerOperation class]]){
             Southgis_WMTSLayerOperation* offOp = (Southgis_WMTSLayerOperation*)op;
             if([offOp.tileKey isEqualToTileKey:key]){
@@ -98,7 +99,9 @@
     }
 }
 
-- (void) didFinishOperation:(Southgis_WMTSLayerOperation*)op{
+- (void)didFinishOperation:(Southgis_WMTSLayerOperation*)op{
+    
+
     [self setTileData:op.imageData forKey:op.tileKey cacheTile:YES];
 }
 
@@ -121,6 +124,7 @@
     
     //通过图层类型创建文件夹保存切片
     NSString *createPath = [NSString stringWithFormat:@"%@/tdt/%d", docPath,_layerType];
+    
     
     
     return createPath;
@@ -205,7 +209,5 @@
     
     return result;
 }
-
-
 
 @end

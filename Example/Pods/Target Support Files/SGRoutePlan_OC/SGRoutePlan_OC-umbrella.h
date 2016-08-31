@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+#import "AGSPoint+AGSPoint_Ext.h"
 #import "BaiduMapPoint.h"
 #import "BaiduBUSFuzzyTypeLine.h"
 #import "BaiduBUSFuzzyTypeNode.h"
@@ -20,6 +21,8 @@
 #import "BdPOISearchKeyWord.h"
 #import "SouthgisBdMapService.h"
 #import "Enum.h"
+#import "SGRoutePlanHeader.h"
+#import "SGRoutePlanUtil.h"
 #import "SGXMLParser.h"
 #import "SouthgisBaseMapService.h"
 #import "SouthgisBaseRequest.h"

@@ -113,7 +113,31 @@
     *  @return SGSWMTSInfo or nil
     */
     - (instancetype)initWithURLString:(NSString *)url tileDPI:(NSUInteger)dpi delegate:(id<SGSWMTSInfoDelegate>)delegate;
+    例如：
+    #pragma mark - SGSWMTSInfoDelegate
+    - (void)sgsWMTSInfoDidLoad:(SGSWMTSInfo *)wmtsInfo {
+        SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
+        if (layerInfo) {
+            SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
+            [_mapView addMapLayer:layer];
+
+            [layer loadWMTSTileAndUsingCache:YES];
+        } else {
+            NSLog(@"tuceng wei kong");
+        }
+    }
+## Setting
+    由于ArcgisSDK是静态库的原因,所有pod Install ,或者pod update 后，要更改SGTileLayer.framework编译属性.
+    1.点击打开Pods项目
+    2.选择SGTileLayer.framework 
+    3.选择Build Settings菜单栏;
+    4.搜索Mach-o 编译库选项；
+    5.修改Mach-o 为Static Library
+    6.每次pod install 或者pod update 后，都要更改上述的编译配置信息；
+    如下图所示：
     
+![()](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_AAFAA780-2095-467B-B442-F5A3159C2777.png)
+     
 
 ## Example
 

@@ -20,9 +20,15 @@
  *
  *  @brief  天地图POI搜索，公交，驾车路线搜索类
  */
-@interface SouthgisTdtMapService : SouthgisBaseMapService
+@interface SouthgisTdtMapService : NSObject
 
-
+/**
+ *  @author crash         crash_wu@163.com   , 16-08-26 15:08:22
+ *
+ *  @brief  单例
+ *
+ */
++(instancetype) shareInstance;
 
 
 /**

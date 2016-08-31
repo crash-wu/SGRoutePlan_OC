@@ -1,11 +1,14 @@
 use_frameworks!
 
-pod 'SGTileLayer'
 pod 'SVProgressHUD', '~> 2.0.3'
 pod 'SKSTableView', '~> 0.0.2'
 
 target 'SGRoutePlan_OC_Example' do
   pod 'SGRoutePlan_OC', :path => '../SGRoutePlan_OC.podspec'
+  
+  pod 'SGTileLayer' ,'~> 0.0.2'
+#  pod 'SVProgressHUD', '~> 2.0.3'
+#  pod 'SKSTableView', '~> 0.0.2'
 
 #  target 'SGRoutePlan_OC_Tests' do
 #    inherit! :search_paths

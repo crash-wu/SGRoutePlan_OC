@@ -13,13 +13,7 @@
 @implementation SouthgisBdWMTSLayer
 
 
-- (instancetype)initWithCachePath:(NSString *)cachePath{
-    
-    if (self = [super initWithCachePath:cachePath]) {
-        
-    }
-    return self;
-}
+
 
 /**
  *  @author crash         crash_wu@163.com   , 16-04-27 09:04:06
@@ -38,31 +32,25 @@
         /*get the currect layer info
          */
         _layerInfo = [[Southgis_BdWMTSLayerInfoDelegate alloc]getLayerInfo:wmtsLayerType];
-        
-//        if (![url isEqual:[NSNull null]]) {
-//            _layerInfo.url = url;
-//        }
+
         
         AGSSpatialReference* sr = [AGSSpatialReference spatialReferenceWithWKID:_layerInfo.srid];
         
-        _fullEnvelope = [[AGSEnvelope alloc] initWithXmin:_layerInfo.xMin
+        self.sgFullEnvelope = [[AGSEnvelope alloc] initWithXmin:_layerInfo.xMin
                                                      ymin:_layerInfo.yMin
                                                      xmax:_layerInfo.xMax
                                                      ymax:_layerInfo.yMax
                                          spatialReference:sr];
         
-        _tileInfo = [[AGSTileInfo alloc]initWithDpi:_layerInfo.dpi
+        self.sgTileInfo = [[AGSTileInfo alloc]initWithDpi:_layerInfo.dpi
                                              format:@"PNG" lods:_layerInfo.lods origin:_layerInfo.origin spatialReference:self.spatialReference tileSize:CGSizeMake(_layerInfo.tileWidth,_layerInfo.tileHeight)];
         
-        [_tileInfo computeTileBounds:self.fullEnvelope];
+        [self.sgTileInfo computeTileBounds:self.sgFullEnvelope];
         
         [super layerDidLoad];
     }
     
     return self;
-    
-
-    
 }
 
 
@@ -83,7 +71,7 @@
         else{
             Southgis_BdWMTSLayerOperation *operation = [[Southgis_BdWMTSLayerOperation alloc]initWithTileKey:key TiledLayerInfo:_layerInfo target:weakSelf action:@selector(didFinishOperation:)];
             
-            [_requestQueue addOperation:operation];
+            [weakSelf.requestQueue addOperation:operation];
         }
     }];
     

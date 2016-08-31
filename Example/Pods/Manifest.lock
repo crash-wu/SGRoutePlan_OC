@@ -1,14 +1,14 @@
 PODS:
   - SGRoutePlan_OC (0.1.0):
     - YYModel
-  - SGTileLayer (0.0.1)
+  - SGTileLayer (0.0.2)
   - SKSTableView (0.0.2)
   - SVProgressHUD (2.0.3)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - SGRoutePlan_OC (from `../SGRoutePlan_OC.podspec`)
-  - SGTileLayer
+  - SGTileLayer (~> 0.0.2)
   - SKSTableView (~> 0.0.2)
   - SVProgressHUD (~> 2.0.3)
 
@@ -17,12 +17,12 @@ EXTERNAL SOURCES:
     :path: ../SGRoutePlan_OC.podspec
 
 SPEC CHECKSUMS:
-  SGRoutePlan_OC: 431a5625a6f338141a649f587d0356f917bd9ff2
-  SGTileLayer: 733caf9ffc1d952e5e62030b04ba5c0d5576e7e8
+  SGRoutePlan_OC: 3f3431c9c3f98ac0bc11da0696fcaeacc6da168a
+  SGTileLayer: a09fe120b480592dea37e24c15096828147f22f6
   SKSTableView: f552b4847d0f11425891420473c3e041a7743a06
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 912c36d5ae89fdb4be4586fdc3dcce5fbd28fbaf
+PODFILE CHECKSUM: a330c187f0d87a744b5df3a6e14bff02c2000b5e
 
 COCOAPODS: 1.0.1

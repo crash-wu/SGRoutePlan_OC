@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ArcGIS/ArcGIS.h>
+#import <SGTileLayer/SGTileLayerHeader.h>
+#import <SGRoutePlan_OC/SGRoutePlanHeader.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface MapViewController : UIViewController
+
+@property(nonnull,strong,nonatomic) AGSMapView *mapView;
+@property(nonatomic,strong,nonnull) UIButton *poiBtn;
+
 
 @end
