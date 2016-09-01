@@ -70,6 +70,18 @@
 (nonnull void(^) (NSArray<BusLine *> * _Nullable carline ))success failed:
 (nonnull FailedBlock)failed;
 
+/**
+ *  @author crash         crash_wu@163.com   , 16-09-01 11:09:44
+ *
+ *  @brief  逆地址编码
+ *
+ *  @param key    逆地址编码请求实体
+ *  @param fail   请求成功返回bolck
+ *  @param failed 请求失败返回bolck
+ */
+-(void)getCode:(ReverseAddressSearchKeyword *)entity success:(void (^)(ReverseAddress * address))success fail:(nonnull FailedBlock)failed;
+
+
 ```
 
 ### SGRoutePlanService
@@ -203,6 +215,35 @@
 -(void)zoomTo10Level:(nonnull AGSMapView *)mapView;
 
 ```
+
+###BusLine
+    天地图公交路线实体
+
+###TdtPOIResult
+    天地图POI搜索结果实体
+
+###TdtPOISearchKeyword
+    天地图POI搜索请求参数
+
+###BusLineSearch
+    天地图公交路线请求参数
+
+###CarLineSearch
+    天地图驾车规划请求参数
+
+###CarLine 
+    天地图驾车路线实体
+
+
+###ReverseAddressSearchKeyword
+    逆地址编码搜索请求实体
+
+###ReverseAddress
+    逆地址搜索结果实体(依据经纬度坐标查找位置信息)
+
+##注意
+[公交节点，驾车路线节点详情请查看Swift 版本](https://github.com/crash-wu/SGRoutePlan)
+
 
 ## Example
 

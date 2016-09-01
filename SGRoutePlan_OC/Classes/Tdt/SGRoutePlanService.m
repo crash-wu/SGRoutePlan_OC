@@ -261,7 +261,7 @@
  *  @param fail   请求成功返回bolck
  *  @param failed 请求失败返回bolck
  */
--(void)getCode:(ReverseAddressSearchKeyword *)entity success:(void (^)(ReverseAddress * address))success fail:(nonnull FailedBlock)failed{
+-(void)getCode:(ReverseAddressSearchKeyword *)entity success:(nonnull void (^)(ReverseAddress *_Nullable address))success fail:(nonnull FailedBlock)failed{
     
     
     NSString *postStr = [[entity yy_modelToJSONString]stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
