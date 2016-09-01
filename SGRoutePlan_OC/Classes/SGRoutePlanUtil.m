@@ -55,7 +55,7 @@
  *  @brief  单例
  *
  */
-+(instancetype) sharedInstance{
++(nonnull instancetype) sharedInstance{
     
     static SGRoutePlanUtil * instance = nil;
     

@@ -22,7 +22,7 @@
  *  @brief  单例
  *
  */
-+(instancetype) sharedInstance;
++(nonnull instancetype) sharedInstance;
 
 /**
  *  @author crash         crash_wu@163.com   , 16-08-31 17:08:34
