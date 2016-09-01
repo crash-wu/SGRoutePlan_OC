@@ -11,7 +11,8 @@
 /**
  *  自定义 Error 标识符
  */
-static NSString * _Nonnull const SouthgisErrorDomain;
+
+#define SouthgisErrorDomain @"SouthgisErrorDomain"
 
 //天地图web 搜索服务接口(POI,地名地址，公交路线==)
 #define TIANDITU_SEARCH_URL @"http://map.tianditu.com/query.shtml"
@@ -52,7 +53,6 @@ static NSString * _Nonnull const SouthgisErrorDomain;
 (nonnull FailedBlock)failed{
     
     NSString *postStr = [[keyWordEntity yy_modelToJSONString] stringByAddingPercentEncodingWithAllowedCharacters: [NSCharacterSet URLHostAllowedCharacterSet]];
-  //  postStr=[self p_stringByURLEncode:postStr];
     
     NSString *urlStr = GET_TIANDITU_SEARCH_URL(@"query",postStr);
     
@@ -116,11 +116,11 @@ static NSString * _Nonnull const SouthgisErrorDomain;
  */
 -(void)carLineSearch :
 (nullable CarLineSearch *)driverEntity success:
-(nonnull void(^)(NSArray<CarLine *> * _Nullable array))success andFail:
+(nonnull void(^)(CarLine  * _Nullable carline))success andFail:
 (nonnull FailedBlock)fail{
     
-    NSString *postStr = [driverEntity yy_modelToJSONString];
- //   postStr=[self p_stringByURLEncode:postStr];
+    NSString *postStr = [[driverEntity yy_modelToJSONString]stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+
     
     NSString *urlStr = GET_TIANDITU_SEARCH_URL(@"search",postStr);
 
@@ -199,8 +199,8 @@ static NSString * _Nonnull const SouthgisErrorDomain;
 (nonnull void(^) ( NSArray<BusLine *> * _Nullable array ))success failed:
 (nonnull FailedBlock)failed{
     
-    NSString *postStr = [entity yy_modelToJSONString];
- //   postStr=[self p_stringByURLEncode:postStr];
+    NSString *postStr = [[entity yy_modelToJSONString]stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+
     
     NSString *urlStr = GET_TIANDITU_SEARCH_URL(@"busline",postStr);
 
@@ -216,7 +216,7 @@ static NSString * _Nonnull const SouthgisErrorDomain;
         
         if (!data || data.length == 0) {
             if (failed) {
-                NSError *error = [NSError errorWithDomain:SouthgisErrorDomain code:BaiduWebServerErrorNullResponse userInfo:@{NSLocalizedDescriptionKey: @"空数据"}];
+                NSError *error = [NSError errorWithDomain:SouthgisErrorDomain code:BaiduWebServerErrorNullResponse userInfo:@{@"message": @"空数据"}];
                 failed(error);
             }
             return ;
@@ -230,9 +230,9 @@ static NSString * _Nonnull const SouthgisErrorDomain;
         NSArray *array = [json objectForKey:@"results"];
         if (array.count == 0) {
             if (failed) {
-                NSError *error = [NSError errorWithDomain:SouthgisErrorDomain
-                                                     code:BaiduWebServerErrorNullResponse
-                                                 userInfo:@{NSLocalizedDescriptionKey: @"空数据"}];
+
+                NSError *error = [NSError errorWithDomain:SouthgisErrorDomain code:BaiduWebServerErrorNullResponse userInfo:@{@"message": @"空数据"}];
+                
                 failed(error);
             }
             

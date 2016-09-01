@@ -125,21 +125,21 @@ typedef NS_ENUM(NSInteger ,BusLineSearchType){
      *
      *  @brief  较快捷
      */
-    SpeedyType=0,
+    SpeedyType=1,
     
     /**
      *  @author crash         crash_wu@163.com   , 16-08-26 10:08:07
      *
      *  @brief  少换剩
      */
-     LessChangeType=1,
+     LessChangeType=2,
     
     /**
      *  @author crash         crash_wu@163.com   , 16-08-26 10:08:07
      *
      *  @brief  少步行
      */
-     LessWalkType=2,
+     LessWalkType=3,
     
     
     /**
@@ -147,7 +147,7 @@ typedef NS_ENUM(NSInteger ,BusLineSearchType){
      *  
      *  @brief  不坐地铁
      */
-     NoMetroType=3
+     NoMetroType=4
 };
 
 

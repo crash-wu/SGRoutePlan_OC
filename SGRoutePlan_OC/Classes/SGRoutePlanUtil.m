@@ -171,7 +171,7 @@
                 
                 point = [point webpointToWS84point];
                 
-                value.lonlat = [NSString stringWithFormat:@"%@ %@",point.x,point.y];
+                value.lonlat = [NSString stringWithFormat:@"%lf %lf",point.x,point.y];
                 [result arrayByAddingObject:value];
             }
         }
@@ -340,7 +340,7 @@
                 point = [point webpointToWS84point];
             }
             
-            NSString *ws84LonLat = [NSString stringWithFormat:@"%@,%@",point.x,point.y];
+            NSString *ws84LonLat = [NSString stringWithFormat:@"%lf,%lf",point.x,point.y];
 
             //经纬度字符串
             attributes[POI_LONLAT] = ws84LonLat;
@@ -430,7 +430,7 @@
     
     if(points.count > 1){
         //驾车/公交路线终点
-        [self showOriginOrDestionPointOnMapView:points[1] andMapView:mapView andImageName:endImageName andLayerName:CAR_LINE_DESTION_LAYER_NAME];
+        [self showOriginOrDestionPointOnMapView:points.lastObject andMapView:mapView andImageName:endImageName andLayerName:CAR_LINE_DESTION_LAYER_NAME];
     }
 
 }
@@ -584,7 +584,7 @@
     AGSPictureMarkerSymbol *graphicSymbol = [[AGSPictureMarkerSymbol alloc]initWithImageNamed:imageName];
     NSDictionary *attribute = @{@"type" :@"originOrDestion"};
     
-    AGSGraphic *graphic = [[AGSGraphic alloc]initWithGeometry:point symbol:symbolLayer attributes:attribute];
+    AGSGraphic *graphic = [[AGSGraphic alloc]initWithGeometry:point symbol:graphicSymbol attributes:attribute];
     [symbolLayer addGraphic:graphic];
     [symbolLayer refresh];
     [mapView addMapLayer:symbolLayer withName:layerName];

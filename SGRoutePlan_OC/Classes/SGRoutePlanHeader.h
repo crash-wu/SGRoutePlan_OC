@@ -14,5 +14,15 @@
 #import "SGRoutePlanService.h"
 #import "AGSPoint+AGSPoint_Ext.h"
 #import "SGRoutePlanUtil.h"
+#import "BusLine.h"
+#import "BusLineSearch.h"
+#import "BusSegment.h"
+#import "BusSegmentLine.h"
+#import "BusStation.h"
+#import "CarLine.h"
+#import "CarLineNode.h"
+#import "CarLineSearch.h"
+#import "CarMapInfoNode.h"
+#import "Enum.h"
 
 #endif /* SGRoutePlanHeader_h */

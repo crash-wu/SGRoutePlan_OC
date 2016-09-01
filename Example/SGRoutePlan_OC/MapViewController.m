@@ -13,6 +13,10 @@
 
 @property(nonatomic,strong) TdtPOISearchKeyWord *poiKey;
 
+@property(nonatomic,strong,nonnull) BusLineSearch *busKey;
+
+@property(nonatomic,strong,nonnull) CarLineSearch *carKey;
+
 @end
 
 @implementation MapViewController
@@ -35,9 +39,28 @@
     self.poiBtn.backgroundColor = [UIColor blueColor];
     [self.poiBtn addTarget:self action:@selector(poiSearch:) forControlEvents:UIControlEventTouchUpInside];
     
+    self.busBtn = [UIButton buttonWithType: UIButtonTypeCustom];
+    [self.view addSubview:self.busBtn];
+    self.busBtn.frame = CGRectMake(70, 0, 70, 50);
+    [self.busBtn setTitle:@"公交" forState:UIControlStateNormal];
+    [self.busBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.busBtn.backgroundColor = [UIColor blueColor];
+    [self.busBtn addTarget:self action:@selector(busSearch:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    self.carBtn = [UIButton buttonWithType: UIButtonTypeCustom];
+    [self.view addSubview:self.carBtn];
+    self.carBtn.frame = CGRectMake(140, 0, 70, 50);
+    [self.carBtn setTitle:@"驾车" forState:UIControlStateNormal];
+    [self.carBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.carBtn.backgroundColor = [UIColor blueColor];
+    [self.carBtn addTarget:self action:@selector(carSearch:) forControlEvents:UIControlEventTouchUpInside];
+    
     [[SGTileLayerUtil sharedInstance] loadTdtTileLayer:WMTS_VECTOR_2000 andMapView:self.mapView];
     
     [self zoomToChineseEnvelopeCGCS2000];
+    
+    
 }
 
 
@@ -62,15 +85,60 @@
     self.poiKey.mapBound = [[SGRoutePlanUtil sharedInstance] getMapBound:self.mapView];
     self.poiKey.level = 14;
     
+    __weak  typeof(&*self) weak = self;
     [SVProgressHUD showWithStatus:@"正在请求"];
     [[SGRoutePlanService shareInstance] poiSearch:self.poiKey success:^(NSArray<TdtPOIResult *> * _Nullable array) {
         [SVProgressHUD showSuccessWithStatus:@"成功"];
         
+        [[SGRoutePlanUtil sharedInstance] showPOIResultsLayer:array andMapView:weak.mapView andImageName:@"list_numb_img"];
     } failed:^(id obj) {
         [SVProgressHUD showErrorWithStatus:@"失败"];
     }];
     
 }
 
+-(void)busSearch:(UIButton *)button{
+
+    [SVProgressHUD showWithStatus:@"搜索"];
+    self.busKey = [[BusLineSearch alloc]init];
+    self.busKey.startposition = @"113.3714941059775,23.06889937192582";
+    self.busKey.endposition = @"113.3796739596069,23.10052194023985";
+    self.busKey.linetype = SpeedyType;
+    __weak typeof(&*self) weak = self;
+    
+    [[SGRoutePlanService shareInstance] busLineSearch:self.busKey success:^(NSArray<BusLine *> * _Nullable array) {
+        
+        [SVProgressHUD showSuccessWithStatus:@"成功"];
+        
+        if (array.count > 0){
+            [[SGRoutePlanUtil sharedInstance]drawBusLine: array[0] andMapView:weak.mapView andColor:[UIColor blueColor] andStartImage:@"start_popo" andEndImage:@"end_popo"];
+        }
+
+        
+    } failed:^(id obj) {
+        
+        [SVProgressHUD showErrorWithStatus:@"失败"];
+    }];
+
+}
+
+-(void)carSearch:(UIButton *)button{
+    
+    self.carKey = [[CarLineSearch alloc] init  ];
+    self.carKey.orig = @"113.3714941059775,23.06889937192582";
+    self.carKey.dest = @"113.3796739596069,23.10052194023985";
+    self.carKey.style =  FastType;
+    
+    __weak typeof( &*self) weak = self;
+    
+    [[SGRoutePlanService shareInstance] carLineSearch:self.carKey success:^(CarLine * _Nullable array) {
+        
+        [[SGRoutePlanUtil sharedInstance] drawDriveLine:array andMapView:weak.mapView andColor:[UIColor blueColor] andStartImage:@"start_popo" andEndImage:@"end_popo"];
+        
+    } andFail:^(id obj) {
+        
+    }];
+    
+}
 
 @end

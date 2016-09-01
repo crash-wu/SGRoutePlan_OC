@@ -74,7 +74,7 @@ typedef NS_ENUM(NSInteger, SouthgisErrorCode) {
  */
 -(void)carLineSearch :
 (nullable CarLineSearch *)driverEntity success:
-(nonnull void( ^)(NSArray<CarLine *> * _Nullable array))success andFail:
+(nonnull void( ^)(CarLine * _Nullable array))success andFail:
 (nonnull FailedBlock)fail;
 
 
@@ -89,7 +89,7 @@ typedef NS_ENUM(NSInteger, SouthgisErrorCode) {
  */
 -(void)busLineSearch:
 (nullable BusLineSearch *)entity success:
-(nonnull void(^) (NSArray<BusLine *> * _Nullable array ))success failed:
+(nonnull void(^) (NSArray<BusLine *> * _Nullable carline ))success failed:
 (nonnull FailedBlock)failed;
 
 @end

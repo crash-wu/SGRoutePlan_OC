@@ -16,6 +16,8 @@
 
 @property(nonnull,strong,nonatomic) AGSMapView *mapView;
 @property(nonatomic,strong,nonnull) UIButton *poiBtn;
+@property(nonatomic,strong ,nonnull) UIButton *busBtn;
+@property(nonatomic,strong,nonnull) UIButton *carBtn;
 
 
 @end

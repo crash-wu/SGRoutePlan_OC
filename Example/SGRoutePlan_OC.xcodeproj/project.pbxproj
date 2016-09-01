@@ -21,6 +21,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		7F61E99AD375FF65343EB53C /* Pods_SGRoutePlan_OC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07078403C4CCA4684993C3D /* Pods_SGRoutePlan_OC_Example.framework */; };
 		98A27DC11D7689E700FB2EA4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A27DC01D7689E700FB2EA4 /* Launch Screen.storyboard */; };
+		98A27DC61D76E69100FB2EA4 /* end_popo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A27DC21D76E69100FB2EA4 /* end_popo@2x.png */; };
+		98A27DC71D76E69100FB2EA4 /* list_numb_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A27DC31D76E69100FB2EA4 /* list_numb_img.png */; };
+		98A27DC81D76E69100FB2EA4 /* list_numb_img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A27DC41D76E69100FB2EA4 /* list_numb_img@2x.png */; };
+		98A27DC91D76E69100FB2EA4 /* start_popo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A27DC51D76E69100FB2EA4 /* start_popo@2x.png */; };
 		98E2F4821D6FF3690014CCAF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F4811D6FF3690014CCAF /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,10 @@
 		751A64A0325D3E6BA13AEA8E /* Pods_SGRoutePlan_OC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGRoutePlan_OC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A6FEBD3B270CD3D13D98B8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		98A27DC01D7689E700FB2EA4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		98A27DC21D76E69100FB2EA4 /* end_popo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "end_popo@2x.png"; sourceTree = "<group>"; };
+		98A27DC31D76E69100FB2EA4 /* list_numb_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_numb_img.png; sourceTree = "<group>"; };
+		98A27DC41D76E69100FB2EA4 /* list_numb_img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_numb_img@2x.png"; sourceTree = "<group>"; };
+		98A27DC51D76E69100FB2EA4 /* start_popo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_popo@2x.png"; sourceTree = "<group>"; };
 		98E2F4801D6FF3690014CCAF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		98E2F4811D6FF3690014CCAF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		B07078403C4CCA4684993C3D /* Pods_SGRoutePlan_OC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGRoutePlan_OC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +134,10 @@
 		6003F593195388D20070C39A /* Example for SGRoutePlan_OC */ = {
 			isa = PBXGroup;
 			children = (
+				98A27DC21D76E69100FB2EA4 /* end_popo@2x.png */,
+				98A27DC31D76E69100FB2EA4 /* list_numb_img.png */,
+				98A27DC41D76E69100FB2EA4 /* list_numb_img@2x.png */,
+				98A27DC51D76E69100FB2EA4 /* start_popo@2x.png */,
 				6003F59C195388D20070C39A /* AppDelegate.h */,
 				6003F59D195388D20070C39A /* AppDelegate.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -273,9 +285,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A27DC61D76E69100FB2EA4 /* end_popo@2x.png in Resources */,
 				98A27DC11D7689E700FB2EA4 /* Launch Screen.storyboard in Resources */,
+				98A27DC81D76E69100FB2EA4 /* list_numb_img@2x.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				98A27DC91D76E69100FB2EA4 /* start_popo@2x.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				98A27DC71D76E69100FB2EA4 /* list_numb_img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
