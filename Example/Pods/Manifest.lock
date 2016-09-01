@@ -1,5 +1,5 @@
 PODS:
-  - SGRoutePlan_OC (0.1.0):
+  - SGRoutePlan_OC (0.0.2):
     - YYModel
   - SGTileLayer (0.0.2)
   - SKSTableView (0.0.2)
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
     :path: ../SGRoutePlan_OC.podspec
 
 SPEC CHECKSUMS:
-  SGRoutePlan_OC: 3f3431c9c3f98ac0bc11da0696fcaeacc6da168a
+  SGRoutePlan_OC: bc666e55cbdd2c47806be07cfd58053627861d3b
   SGTileLayer: a09fe120b480592dea37e24c15096828147f22f6
   SKSTableView: f552b4847d0f11425891420473c3e041a7743a06
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4

@@ -25,6 +25,7 @@
 		98A27DC71D76E69100FB2EA4 /* list_numb_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A27DC31D76E69100FB2EA4 /* list_numb_img.png */; };
 		98A27DC81D76E69100FB2EA4 /* list_numb_img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A27DC41D76E69100FB2EA4 /* list_numb_img@2x.png */; };
 		98A27DC91D76E69100FB2EA4 /* start_popo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A27DC51D76E69100FB2EA4 /* start_popo@2x.png */; };
+		98A27DD41D77DEDE00FB2EA4 /* GetCodeResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A27DD31D77DEDE00FB2EA4 /* GetCodeResultView.m */; };
 		98E2F4821D6FF3690014CCAF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F4811D6FF3690014CCAF /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		98A27DC31D76E69100FB2EA4 /* list_numb_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_numb_img.png; sourceTree = "<group>"; };
 		98A27DC41D76E69100FB2EA4 /* list_numb_img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_numb_img@2x.png"; sourceTree = "<group>"; };
 		98A27DC51D76E69100FB2EA4 /* start_popo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_popo@2x.png"; sourceTree = "<group>"; };
+		98A27DD21D77DEDE00FB2EA4 /* GetCodeResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCodeResultView.h; sourceTree = "<group>"; };
+		98A27DD31D77DEDE00FB2EA4 /* GetCodeResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCodeResultView.m; sourceTree = "<group>"; };
 		98E2F4801D6FF3690014CCAF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		98E2F4811D6FF3690014CCAF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		B07078403C4CCA4684993C3D /* Pods_SGRoutePlan_OC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGRoutePlan_OC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +160,8 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* SGRoutePlan_OC-Prefix.pch */,
+				98A27DD21D77DEDE00FB2EA4 /* GetCodeResultView.h */,
+				98A27DD31D77DEDE00FB2EA4 /* GetCodeResultView.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				98E2F4821D6FF3690014CCAF /* MapViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				98A27DD41D77DEDE00FB2EA4 /* GetCodeResultView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

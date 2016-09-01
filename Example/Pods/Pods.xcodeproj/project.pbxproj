@@ -7,123 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015E9599AE91972E802283CEB89E8D99 /* CarMapInfoNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EC42BBD14C23EDEF162DA1847AF9D716 /* CarMapInfoNode.m */; };
-		047F15FDA0BF11D499C98F053FA23FE6 /* TdtPOISearchKeyWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A05B60CB249C2EB980D86449544873 /* TdtPOISearchKeyWord.m */; };
+		085411796FB094D0D3588DAB68D6C6E4 /* BusLineSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = F1682EB2C33399AB22A1D75E3658634F /* BusLineSearch.m */; };
 		09B4B318EC5709D27E4A9F0015073C52 /* SGSWMTSLayerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2431C9883C3F058D9D534DF88E57E3 /* SGSWMTSLayerInfo.m */; };
-		0D6C7401D8AD477CFC92FAB3A9933889 /* Enum.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8159C0D2666E86EBF47E1E02D73DCE /* Enum.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F2F116FB0FEBCB095EE848458C4F6ED /* CarLineNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 98CF9745E926DBE7C8C2936C47DB652C /* CarLineNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C937A7786524EAE33E02B78E1172DB0 /* AGSPoint+AGSPoint_Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9D5BA42F6B9EE1662E767CD58D5169 /* AGSPoint+AGSPoint_Ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1119DE38FEB0CB9B067DCDC9AB6B34C9 /* expandableImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 895B68D6E19B23310D22F5D0A3CD8DB6 /* expandableImage@2x.png */; };
-		13FEA2229E953183B2636358E432EBDC /* CarLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF49709EE03DDCCCC6D121BE9227908 /* CarLine.m */; };
 		151F011FEB927A28793AA39CCD3E7B40 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D3DB3B4D53A0DA9363243636CB1B6F89 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16027C024AD8FD7738C58D29BE25638F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059156AEA8362EDE6DEEA7A9E355C450 /* Foundation.framework */; };
+		1A991AD7E2CAD591FAAA83D3BCA665B5 /* BusLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A456A22C0EDE70EF3E2BDBD16B51243 /* BusLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B29B69F988C619DE8F1D5517A7FCBD5 /* SouthgisBdWMTSLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D9ADCF2001D290AE5616875B1F5FB7 /* SouthgisBdWMTSLayer.m */; };
+		1F6BD5FCC238F3DBA10F33668CC590B1 /* BusStation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA84E14D8BF3BD0FD594F5A29897F06 /* BusStation.m */; };
 		21EC3F064D461AA447B1D66BBC7C6A3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059156AEA8362EDE6DEEA7A9E355C450 /* Foundation.framework */; };
 		255957BAD60ECDB98D0E05F034BFE43C /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F291B4E61783A37B3F19C2E87605A77D /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2996B0D687145604308CE32ED74EE11E /* TdtPOISearchKeyWord.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9511217609B69F9080129CF7300148 /* TdtPOISearchKeyWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27438E07ADC3713B755FA09F6FE9F312 /* ReverseAddressSearchKeyword.m in Sources */ = {isa = PBXBuildFile; fileRef = F6435A7CBBDD8A3FBD3DE6323603E022 /* ReverseAddressSearchKeyword.m */; };
+		2C810EEDA8EC8E003B5DE57DC194671C /* BusSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A49A1026105A436A4FD7EB88C64BCDA /* BusSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D894CFE683E5C927A26A8EAEACC22E3 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA0684A6A720E44FC7308565310BCF2 /* SVRadialGradientLayer.m */; };
+		2E47D89DBDEBC4FAEC1A2007399B213E /* CarLineSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = B953D9932055D5AB7993FECA3EC49960 /* CarLineSearch.m */; };
 		3773ADF9FA7280B1B0E8BAB494F2D1B0 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D60E5BEF066B374684AE38279C9D2C /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38C5E80137D50C0402B22ABEB6817E5F /* Southgis_TiledServiceLayerInfoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC85DD9A7829B37488C246E72E34131 /* Southgis_TiledServiceLayerInfoOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AAC30C6217BCD4A5032979442D34EF9 /* Southgis_WMTSLayerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FC684BA3402007F7D65810144B023767 /* Southgis_WMTSLayerOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B10DE9BCA30D28402A177F612458E36 /* SGRoutePlanUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D87E885299EB478E5C233E7667CA0D /* SGRoutePlanUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B30EDC7A06B136B916E3D72891BBE6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059156AEA8362EDE6DEEA7A9E355C450 /* Foundation.framework */; };
 		3D09360B8E4E453068FA4EE4D12A5658 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF4F9F772BBFF3201E3446102A6C7792 /* SVProgressHUD.bundle */; };
 		3DF7922FF70B29A77848D620E8F0D34A /* Southgis_BdWMTSLayerInfoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E38045776E2E436AAFB6994BC6A73A39 /* Southgis_BdWMTSLayerInfoDelegate.m */; };
+		3FACB35950E7661567573EACAEE667EF /* TdtPOIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7AF8E77706EB7DD198DD6E45F4948B /* TdtPOIResult.m */; };
 		412C14E9BA61F900A349406FB9EC3F51 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFECC27BD2172DD57652B8D7DE720E6B /* CoreFoundation.framework */; };
 		4860F5AB427B68CE30F2FDF0A270234B /* Southgis_TiledServiceLayerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F837C75035F699D963A9E745F75B97 /* Southgis_TiledServiceLayerInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49B351B477D72F21F24EE33BF1ABECD2 /* BusLineSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ED0F57D879D1164819DC1DC31FA9798 /* BusLineSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B942CA9310FFBBF1A1CEC020A6BD086 /* SGTileLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A51AFB48B87A9A7F651533D8D267552 /* SGTileLayer-dummy.m */; };
 		4C049C82ADCC7B996F8E57768FC7E33A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059156AEA8362EDE6DEEA7A9E355C450 /* Foundation.framework */; };
 		5373A6B76539EA57477918E4EA1A1238 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059156AEA8362EDE6DEEA7A9E355C450 /* Foundation.framework */; };
 		5F8D383AC34AAF6CA0A88B3C13886459 /* SouthgisTiledMapHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8045F2D1AAD9F2245DC964F7E78A6822 /* SouthgisTiledMapHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FDB10EF145C6443D43E93CECE816867 /* SKSTableViewCellIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8708B70D777DA0DE8F1DAC32694F21AA /* SKSTableViewCellIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61145A75847EA23FAA7BD59FF0EB7B85 /* SGXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E1E3E599C2EFEE6E5BFD7EBB9871A /* SGXMLParser.m */; };
 		61223F73495B5FDB715EC1ED2BB66C60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFBD3BC897B74C2A46F12B368E10F3F /* QuartzCore.framework */; };
+		63C8856695DBEBDE422D20AECA99D190 /* CarLineNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 85AB453A47C718A4809BFC445D30DCD7 /* CarLineNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63E9622BCDA639D510401FA1FC21E064 /* SGSWMTSLayerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 09FE31E953571E850FF1070167A2F6EA /* SGSWMTSLayerInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		654981763929F2353948E16669F875B4 /* TdtPOIResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 545036CEE552E4126DB542D7E5C205A1 /* TdtPOIResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65FEBEDB399CE2227BB56ADCC41FD903 /* NSDictionary+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BBB37D517FA58A87AA1A866C2266CBB /* NSDictionary+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6739B0FB55D37B36F8F497D1AE2E1415 /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A74795139B3D962D1530E74DC8D237C /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m */; };
 		6983F8F1DBEA837967C54CA7FB73B0E4 /* SGTileLayerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E20203069A89ACE5869DCD3DCC95A27B /* SGTileLayerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F45D7C24AA857C5CC28D13FB0D06FE5 /* SGRoutePlanUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B7ED768388EC2379311EEC58B561D075 /* SGRoutePlanUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		702D9BFA4557FF9568CBDEB51AF6D0DF /* expandableImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 58662A257A9238216C400FFABB3D910C /* expandableImage.png */; };
-		718C741BEAE785F002FBA69075B0BC19 /* CarMapInfoNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 32823142315428568E62DD531782684B /* CarMapInfoNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		710B06615C3F3F71C0FB8734C31FC03E /* BusSegmentLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6B9FFD39660A2DDB7516DCED0ED1A9 /* BusSegmentLine.m */; };
 		72600D66BAB8D3F3FFAD6158A950B645 /* SouthgisTiledMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2515CBCD145A2A04D7AE2033F2AAB444 /* SouthgisTiledMapHelper.m */; };
-		74B2BF2092CB8B8DF6EE5CAA632DDFC4 /* BusSegmentLine.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF90DD492A27C3C5BE3B27834A3C0AB /* BusSegmentLine.m */; };
-		7581661B5A50C4552999053B99002D12 /* BusLineSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA4FB903C5EA13CA1A343910094120 /* BusLineSearch.m */; };
 		75B72329B1C83B37215EA060DAECD592 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 856898CF8F720C71D3FAD0010DAB91B7 /* SVProgressHUD-dummy.m */; };
-		78AE6A7C10927283F03296198DB52975 /* Enum.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AE47206612BE356A50B2E9FF312A0D /* Enum.m */; };
 		790B68BC36F6CABE25B2C0280FEA64D6 /* SKSTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 615965EBBB286E1B15E4A9D2D3D51229 /* SKSTableView-dummy.m */; };
 		7937A74D148B16018040F6A89D443C7E /* SKSTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB091EA849AD1CEE5BDB743EDAD8BEF /* SKSTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A284612E6C976313622F6E33446FB64 /* CarLineSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4912AC0BB09C42668CBC256C44507B /* CarLineSearch.m */; };
 		7A9313F9B95A2CFDFD4B330BF4EB6CE9 /* SouthgisBaseTiledServiceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E749D492AF15D9DF65C9FD36D8955C1 /* SouthgisBaseTiledServiceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E077EA6685E030F136F5C7C4D2A3AA2 /* Enum.h in Headers */ = {isa = PBXBuildFile; fileRef = B21FC92301CD7DAD97E38C0BA5A8BF6E /* Enum.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F051E3FAD00B8462DF247213B7F2382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059156AEA8362EDE6DEEA7A9E355C450 /* Foundation.framework */; };
+		802C30B35C76E6B5A6B4326B7D719D8B /* CarLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 023805B342FC1B68D8E364235C43AC99 /* CarLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		844D5046A87FE0D4524EF38F3BC262CE /* Pods-SGRoutePlan_OC_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8842CFF33B7524E3A46DFF14A7F00B57 /* Pods-SGRoutePlan_OC_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85792EE8CB49073DF1071E50C9C50AF8 /* SGRoutePlan_OC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A8C68F0D4B2504743BDA2D3B396E77 /* SGRoutePlan_OC-dummy.m */; };
-		88045BDBCD683CAD3EDF9C9D221FEC10 /* BusLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FE5AD2C4E1CAF8A27192AD9A97A8C3 /* BusLine.m */; };
-		88D4EE25BA0B6B9D9E3AA13C0E9FD4BC /* AGSPoint+AGSPoint_Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = A5553DB8BF9AB48C17B9B43BFB8787DD /* AGSPoint+AGSPoint_Ext.m */; };
+		86A828451AED6E5144587875CE1607F6 /* BusLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 139118FA66F9AE90D915BD50792C75A9 /* BusLine.m */; };
+		87B7DF2D7919CA331801CE0C959E22AB /* ReverseAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = DE447E7625E71323E7CD77198751692F /* ReverseAddress.m */; };
+		8AE13B691AC465BE7BC4A5E331F900ED /* AGSPoint+AGSPoint_Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527B839D631F702A8302F780EAD8C50 /* AGSPoint+AGSPoint_Ext.m */; };
 		8D3168F8D9F76185530AABBF4AEE660C /* Southigs_TiledServiceLayerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C42D4496BAD64BF53FA31B06814AD07E /* Southigs_TiledServiceLayerOperation.m */; };
 		91A87CDA5A19734AAFA68C015459A9E8 /* SouthgisTdt_TileLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CC895CD9AFC6EE5B23A02471C58AC791 /* SouthgisTdt_TileLayer.m */; };
 		931E744E60DAF6E481AD2588EC101726 /* SGTileLayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F266D7A7E92D977FF11BA5544822D /* SGTileLayerUtil.m */; };
 		954A236E351E4377F636A91A7D5704FA /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 74915213B3E9E0C41E9F575AD2371E1F /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95D5D54FC213E90726360802DFE61C9E /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3E587D18B245C8192A857F28B470FE /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96EAF685835B15760761D788E9F4A68A /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70CE061E22F0D9304BB2B8BB3252232 /* SVProgressAnimatedView.m */; };
+		974ADACD1DA3D2F99E493DF2EA267D97 /* SGRoutePlanUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AA57E7A31039A319C1DDEA5F08C2667B /* SGRoutePlanUtil.m */; };
 		99E944B63C47C2A2B29B4177EDF9E022 /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AE49C2A8E917E5CA37A21DE49FA3E0 /* NSDictionary+YYAdd.m */; };
-		99ED2592435A0944D060979063331FF6 /* TdtPOIResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6843C83D6E57BDBBB2E302F1305D78CA /* TdtPOIResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BF928043186659996B224CD2A26E9FE /* CarLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B9ADC5CAD422309196C0C3899A3F42 /* CarLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DEEFADCA58EABCDE09BFBDE2C6016A2 /* SGTileLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 314B8D97FDA9A43006A350D12033A027 /* SGTileLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E39B05EF43340E093202253685A1A5B /* SGRoutePlan_OC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A49531F8F3F532555F50275DD2E678 /* SGRoutePlan_OC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EDA8ED77A58D3C9C0CD1B0341A55761 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B642288DC15670839328BF027009B /* YYModel-dummy.m */; };
-		9FDD0F2E5209C6DD7BE2848B61F57DA9 /* SGRoutePlanService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD84B19025337483FEF6C637F0190C8 /* SGRoutePlanService.m */; };
-		A1D5C71A4B7666724C3B9AB2D076AC9F /* TdtPOIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 737AB642519C6B2EB055920BD90023AD /* TdtPOIResult.m */; };
 		A3858D1FD71CB337352E3D24630C3952 /* SouthgisTdtType.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B01882DCE5B7646EC3F6B0EFCD79763 /* SouthgisTdtType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6222EC04A69BBFEED793B6C73DE130E /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375B567434980BFE0B776AA64115C7ED /* YYModel.framework */; };
 		A6224CD1F074CD5ED1734BDBC5B732A4 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA08F2AA7624033718748AD7F4641EE /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A704191DA59B3A4933F44B8FFE7588A2 /* Southgis_TiledServiceLayerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC3EED8BEC7D8FAB939FC04DC1E42D /* Southgis_TiledServiceLayerInfo.m */; };
 		AAC425208E8063B9DFC68B0527F4C312 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B996703C50CD0DFAA376139C7A6D1 /* YYClassInfo.m */; };
-		AC2B9543AA153355E2B73CF2EADBC773 /* BusSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D7513068793849A9B596C744F7AD77 /* BusSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD9D3B20A2C1DB93AFECD31F7C4412B6 /* SouthgisTianDiTuWMTSLayerInfoDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EC32D82C6F5464E6453E0678A085B2A5 /* SouthgisTianDiTuWMTSLayerInfoDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B272CA02551B86808A3AF5AD93140797 /* CarLineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02C6A2B3DB38C53F468EABC48FD5A0 /* CarLineNode.m */; };
+		B1432C97A06E4DD9CA9EEF771FC336E4 /* SGXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAD9C786CDDB68896DA13A9176E123 /* SGXMLParser.m */; };
 		B2D7FDE0D26C9382D1029736175FFF54 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B22B182C90309C537F797063642B2A4 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B319DFB146DFE19D5096FC4D878F671F /* BusSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB221F0A462FD0E40AD6ECADC6B7FA3 /* BusSegment.m */; };
+		B475BB24FED7865D67E4A623C1152229 /* BusSegmentLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2263050CE0B429EF7C84E0441A87CD41 /* BusSegmentLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4C0886C2415E23CF865763276E57B25 /* SouthgisBdWMTSLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BCDC8381AA25D3718AC82966D8F5EEB /* SouthgisBdWMTSLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5292A79E8513EA43C36DCF7C02A4D05 /* SouthgisTianDiTuWMTSLayerInfoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9176ADC0C118694E64F0BCDB05E5D856 /* SouthgisTianDiTuWMTSLayerInfoDelegate.m */; };
 		B57F1FF2EF4F70B4FCBC2816816DA5BA /* Southgis_TiledServiceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75A90109FC36F626194336D37E535F /* Southgis_TiledServiceLayer.m */; };
+		B70769DDE710F89FE8862397E8608476 /* SGRoutePlan_OC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A49531F8F3F532555F50275DD2E678 /* SGRoutePlan_OC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B77974C7801DEF9EB31EB94ED8353F5F /* Southgis_BdWMTSLayerInfoDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E920F2B353F95374B457F690E2649CA5 /* Southgis_BdWMTSLayerInfoDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9F342F52B688DC40B3C226E472D2BCE /* BusSegmentLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D8C132A6F2FD17B73C8B9417FFF415 /* BusSegmentLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA6011DBF66175B3B2C42AB19DA52EB0 /* SouthgisTdtType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE81AAE63669271DDA16228310BD69 /* SouthgisTdtType.m */; };
 		BB4A062C8FE6929B5C1F8BB3235FA41B /* Southgis_BdWMTSLayerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AE3599BA184A67B470D8E5C74F5F95 /* Southgis_BdWMTSLayerOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC98B72AED3C0C69F2B5E00FCD3168A7 /* SKSTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 184C05672AA03F628EDBEF463254943C /* SKSTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C171714F3A3802DA9A0D0A6930456BF7 /* Southigs_TiledServiceLayerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F6A1A89A744CC7241F2E9217A94B82 /* Southigs_TiledServiceLayerOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1F4BDD442B8835A7902DA6D8806CC95 /* BusStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD2E9B3FCF90CE6CE22C79CFAD6521C /* BusStation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C302A5ED680630B206038F7E1283F2DA /* SGRoutePlanHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA51C69C3545E13DD2069BC5E3F58C7 /* SGRoutePlanHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5C7A1A0E30C4B4851685230C41CCB1D /* CarMapInfoNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D45E9BB8DD2635B24F4228BB66103E05 /* CarMapInfoNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6FA8EAB62A145DBF1798B0E2F1F37F1 /* Southgis_WMTSLayerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A25B739502BA5F8A48BB521A6CCB3FD /* Southgis_WMTSLayerOperation.m */; };
 		C7B9AD6D8A6177BA564BCFDBFD28F6E1 /* Southgis_BdWMTSLayerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA25E20F093F31B794587D167E326178 /* Southgis_BdWMTSLayerOperation.m */; };
 		C7E3DC030BF9B43D7BC4FD419D35E100 /* SKSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2323581873594928596E70344B6BEC4 /* SKSTableView.m */; };
 		C9017DD0D24D5AE58374BB78903EF19B /* SouthgisTdt_TileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AB76A403E986EC3FFF888D9CF55A01B8 /* SouthgisTdt_TileLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA7F6EF1F387B7BF70032CEC4A7CF740 /* SouthgisBaseTiledServiceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB52F2FE63ECB201AEF1B957D4B55C4E /* SouthgisBaseTiledServiceLayer.m */; };
-		CAB852014F17BA988F8F04574A6FD14F /* SGXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F2B60F64A68E4153C311431B6E949C /* SGXMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB08A8A6E9FFC65109C9E0E95921293C /* SouthgisTdt_LayerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CFABA67920885CE9CC61ABAB164F0CA9 /* SouthgisTdt_LayerInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC440037687361BF4FE10FC5218047F5 /* SGSWMTSInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF90E5A00FB89012A2B6C8874FF747D5 /* SGSWMTSInfo.m */; };
-		CC5B802699B31FB70CC89B32B6828504 /* BusStation.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A023ABE2EE240D6330D864A955202E /* BusStation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF297962486702FAB70A82025364F126 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0152DD54A67C300414D6332D234F3 /* SVIndefiniteAnimatedView.m */; };
 		D00D4BC2579078C6C64E596F375F9BDA /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F03EEABE60C8C747135907DE8761FA5 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0DF7DA1EA63CAC69B950A1E7407DDC3 /* CarLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FD32E4D3983489B984FD254FE8BA51 /* CarLine.m */; };
+		D210D1D26AC1BB194A094293D86E2A74 /* ReverseAddressSearchKeyword.h in Headers */ = {isa = PBXBuildFile; fileRef = B3205AA76EFE7EEAA6A9AC6524266FD9 /* ReverseAddressSearchKeyword.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5377471D6407AD665E17267838FDD9A /* TdtPOISearchKeyWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 860EAB611E998697A95579B8367C948A /* TdtPOISearchKeyWord.m */; };
 		D5EA621F3CD4704665F16ADFEC814970 /* SKSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B56B5796C0D8DAF93A8C10FCAA5DDAA4 /* SKSTableViewCell.m */; };
+		D6C76DAD1750364E773BCB78D8F2E6AB /* BusSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B78FBA732E7878E30488E9F42BD4C8 /* BusSegment.m */; };
 		D7362961BCC079641F5E1DFAE8E9E3DF /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 995B3DCD802B4D054B92E3E2FF18C444 /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7A5D8FB43A623158FA69095884B3CCE /* SKSTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F9A4F4DBB72FF046612CD168F08788 /* SKSTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7C56689DFF54282047351F949E9293B /* SKSTableViewCellIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7DD843C71840EA4DEC89BD00E8796F /* SKSTableViewCellIndicator.m */; };
 		D8D6ED0064281873765B0791E2C3049C /* SouthgisTdt_LayerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEDFD2312578DD6A559B05D9C9A3EA5 /* SouthgisTdt_LayerInfo.m */; };
 		DA04A4286368127A2D24299A05E69DDF /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C087887E26D4286BEF3D23524E676FE6 /* SVProgressHUD.m */; };
+		DB48B8B305662D5CFE89388A61D8820C /* SGRoutePlan_OC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A8C68F0D4B2504743BDA2D3B396E77 /* SGRoutePlan_OC-dummy.m */; };
+		DE8BDC81FA2A0914AA2DA8680D1107DF /* TdtPOISearchKeyWord.h in Headers */ = {isa = PBXBuildFile; fileRef = 40BEF932AB0D7C0BA453D18D17332543 /* TdtPOISearchKeyWord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF9437C8CCAF9F4C3BDD46AA2C5A0F42 /* CarLineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F6160BFB965CDCC09E0C932767E85623 /* CarLineNode.m */; };
 		E12FBF282BD94E30AF5CA7F708CC3C45 /* Southgis_TiledServiceLayerInfoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1C63A40AE72904B87F37F8201E6077 /* Southgis_TiledServiceLayerInfoOperation.m */; };
 		E2184A09A60C0682E7AC6B3C6E75E259 /* SGSWMTSLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B21982ADBD9EE666DAEF1CCC50B540C /* SGSWMTSLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2B9DFB4E9786694EFAB56EF1ABA877D /* SGRoutePlanUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860DE92801DA4D36ACD8A7835CC722B /* SGRoutePlanUtil.m */; };
-		EAA36528FB68976A8ED74F09A9D2B4EF /* BusLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A509D7353864ADA058612A070770634 /* BusLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB6E2B1A824B3B9BF27C9CCD51020F51 /* Southgis_TiledServiceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 52182E764B054846827A6E033EDE7AFD /* Southgis_TiledServiceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED6DE605E543B8218E413CF87ACBCFB6 /* SGRoutePlanService.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB1DE333E728671FAA2F570FBDC95DA /* SGRoutePlanService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE8AFC73AA53D59A454AC40CC24A96C8 /* Enum.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA9A74EAA9EF06106EE915A061932B6 /* Enum.m */; };
 		EF323A7107C4E07AA82654D1B8EEF3AA /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D30E43E042D0EB6D31B153E609700 /* NSObject+YYModel.m */; };
-		EF6C4843AB6DBA5A87FFDFEC6051A5F5 /* CarLineSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = FABF572D8828A998C616658629BF13F9 /* CarLineSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F030908CC87A7F88D3E163554CB5A578 /* AGSPoint+AGSPoint_Ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A07CE04FCC5A9FFA69C83B0842554AA /* AGSPoint+AGSPoint_Ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF4E8081FC27542E122A5FD2E3D14CE6 /* CarMapInfoNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AAAFA7DB8C9A2F67A6BDDC8ECC070F /* CarMapInfoNode.m */; };
 		F0454107A87468B0BD53E9A4FB3F4C54 /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DF86A8F915862EC25082B90786B1C6CA /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1BF13012F88449E3F0E656A561B34C4 /* SGRoutePlanService.h in Headers */ = {isa = PBXBuildFile; fileRef = 44260640CD339F45CE2D39CE922B0AD0 /* SGRoutePlanService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F06292148775D73C20E7394703CA8702 /* SGXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2958B18BE3013869C29D50C9F022D347 /* SGXMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F31B8E87A9E13CE8C370A8FFA43A8848 /* SGTileLayerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B3A762EA3FF8714F3435E0170575ED /* SGTileLayerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3C241C34D71A40C88CAF1270727FAFC /* Pods-SGRoutePlan_OC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6457CC38FF80BBCCF05CC829B2693 /* Pods-SGRoutePlan_OC_Example-dummy.m */; };
 		F544AC2F456CA8E648C6E425F76D16F3 /* SGSWMTSInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C322CB410AED316E464D1CCF2F55E9B /* SGSWMTSInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F95BF3B9EE334786DEB0B980B361FA01 /* BusStation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4817A8C1528DE99741A2CF376B7CC94 /* BusStation.m */; };
+		F6566A4371B0FD3893655D27C80A67BE /* SGRoutePlanService.m in Sources */ = {isa = PBXBuildFile; fileRef = 972424CF3383103E82F6DF0F2A598C1D /* SGRoutePlanService.m */; };
+		F7A11035276D4BE0EBADABE953C9271B /* ReverseAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 59711341EFE60A3E5E7A266A1C174FCA /* ReverseAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F983E7C8830A3ED905F5585741A8E112 /* CarLineSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = A0383CB2AF4EBB066D80168697307F10 /* CarLineSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD0E543BBC3A1F1B36D7D2A54469DEFF /* SGSWMTSLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9511F2EFF54C7072E76BBEFB384BF59E /* SGSWMTSLayer.m */; };
-		FF7B8BD83FDFFE38D521209E5ACC8833 /* BusLineSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = C296B6EC8148DB806F56446FAAD8BB99 /* BusLineSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFB4BBBA044AC925A04A35EC02B626FB /* SGRoutePlanHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9BDF425D4A14C3E7A2A86159FAD96D /* SGRoutePlanHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,127 +177,133 @@
 
 /* Begin PBXFileReference section */
 		00B995FCA1ED3F3CE97F167D8A1555EA /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YYModel.modulemap; sourceTree = "<group>"; };
+		023805B342FC1B68D8E364235C43AC99 /* CarLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CarLine.h; sourceTree = "<group>"; };
 		059156AEA8362EDE6DEEA7A9E355C450 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0798933F2E62E94B5C428DB37168A5F5 /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
 		07D60E5BEF066B374684AE38279C9D2C /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
 		09FE31E953571E850FF1070167A2F6EA /* SGSWMTSLayerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SGSWMTSLayerInfo.h; path = SGTileLayer/Classes/SGSWMTS/SGSWMTSLayerInfo.h; sourceTree = "<group>"; };
+		0BA51C69C3545E13DD2069BC5E3F58C7 /* SGRoutePlanHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGRoutePlanHeader.h; sourceTree = "<group>"; };
 		0BBB37D517FA58A87AA1A866C2266CBB /* NSDictionary+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+YYAdd.h"; path = "SGTileLayer/Classes/SGSWMTS/NSDictionary+YYAdd.h"; sourceTree = "<group>"; };
-		0BF49709EE03DDCCCC6D121BE9227908 /* CarLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CarLine.m; sourceTree = "<group>"; };
 		0CA0152DD54A67C300414D6332D234F3 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		0F03EEABE60C8C747135907DE8761FA5 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		0F9D5BA42F6B9EE1662E767CD58D5169 /* AGSPoint+AGSPoint_Ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AGSPoint+AGSPoint_Ext.h"; sourceTree = "<group>"; };
+		139118FA66F9AE90D915BD50792C75A9 /* BusLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusLine.m; sourceTree = "<group>"; };
+		1527B839D631F702A8302F780EAD8C50 /* AGSPoint+AGSPoint_Ext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AGSPoint+AGSPoint_Ext.m"; sourceTree = "<group>"; };
 		184C05672AA03F628EDBEF463254943C /* SKSTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKSTableView-umbrella.h"; sourceTree = "<group>"; };
+		2263050CE0B429EF7C84E0441A87CD41 /* BusSegmentLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusSegmentLine.h; sourceTree = "<group>"; };
 		249D1674B084E787D86C8BDD793CA894 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2515CBCD145A2A04D7AE2033F2AAB444 /* SouthgisTiledMapHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SouthgisTiledMapHelper.m; path = SGTileLayer/Classes/SouthgisTiledMapHelper.m; sourceTree = "<group>"; };
 		267B3494F466DF84B9BF930042816E7F /* Pods_SGRoutePlan_OC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGRoutePlan_OC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F9A4F4DBB72FF046612CD168F08788 /* SKSTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSTableViewCell.h; path = SKSTableView/SKSTableViewCell.h; sourceTree = "<group>"; };
-		2A07CE04FCC5A9FFA69C83B0842554AA /* AGSPoint+AGSPoint_Ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AGSPoint+AGSPoint_Ext.h"; sourceTree = "<group>"; };
+		2958B18BE3013869C29D50C9F022D347 /* SGXMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGXMLParser.h; sourceTree = "<group>"; };
+		2A456A22C0EDE70EF3E2BDBD16B51243 /* BusLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusLine.h; sourceTree = "<group>"; };
 		2A51AFB48B87A9A7F651533D8D267552 /* SGTileLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SGTileLayer-dummy.m"; sourceTree = "<group>"; };
 		2B21982ADBD9EE666DAEF1CCC50B540C /* SGSWMTSLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SGSWMTSLayer.h; path = SGTileLayer/Classes/SGSWMTS/SGSWMTSLayer.h; sourceTree = "<group>"; };
-		2C4912AC0BB09C42668CBC256C44507B /* CarLineSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CarLineSearch.m; sourceTree = "<group>"; };
 		314B8D97FDA9A43006A350D12033A027 /* SGTileLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGTileLayer-umbrella.h"; sourceTree = "<group>"; };
-		32823142315428568E62DD531782684B /* CarMapInfoNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CarMapInfoNode.h; sourceTree = "<group>"; };
-		36D8C132A6F2FD17B73C8B9417FFF415 /* BusSegmentLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusSegmentLine.h; sourceTree = "<group>"; };
 		375B567434980BFE0B776AA64115C7ED /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D87E885299EB478E5C233E7667CA0D /* SGRoutePlanUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGRoutePlanUtil.h; sourceTree = "<group>"; };
 		396B642288DC15670839328BF027009B /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
 		3A74795139B3D962D1530E74DC8D237C /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m"; path = "SGTileLayer/Classes/CustomTile/Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m"; sourceTree = "<group>"; };
 		3AB091EA849AD1CEE5BDB743EDAD8BEF /* SKSTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSTableView.h; path = SKSTableView/SKSTableView.h; sourceTree = "<group>"; };
 		3D1D30E43E042D0EB6D31B153E609700 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		3D4F2137EF91735F6C4F401206ACB66F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D5B996703C50CD0DFAA376139C7A6D1 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		3D6B9FFD39660A2DDB7516DCED0ED1A9 /* BusSegmentLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusSegmentLine.m; sourceTree = "<group>"; };
 		3E2431C9883C3F058D9D534DF88E57E3 /* SGSWMTSLayerInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SGSWMTSLayerInfo.m; path = SGTileLayer/Classes/SGSWMTS/SGSWMTSLayerInfo.m; sourceTree = "<group>"; };
 		3E749D492AF15D9DF65C9FD36D8955C1 /* SouthgisBaseTiledServiceLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SouthgisBaseTiledServiceLayer.h; path = SGTileLayer/Classes/SouthgisBaseTiledServiceLayer.h; sourceTree = "<group>"; };
 		3E7A4B6E990A28F9B86A7949384067CB /* SKSTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKSTableView.xcconfig; sourceTree = "<group>"; };
-		3FD84B19025337483FEF6C637F0190C8 /* SGRoutePlanService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGRoutePlanService.m; sourceTree = "<group>"; };
-		40A05B60CB249C2EB980D86449544873 /* TdtPOISearchKeyWord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TdtPOISearchKeyWord.m; sourceTree = "<group>"; };
-		41CA4FB903C5EA13CA1A343910094120 /* BusLineSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusLineSearch.m; sourceTree = "<group>"; };
-		41F2B60F64A68E4153C311431B6E949C /* SGXMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGXMLParser.h; sourceTree = "<group>"; };
+		40BEF932AB0D7C0BA453D18D17332543 /* TdtPOISearchKeyWord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TdtPOISearchKeyWord.h; sourceTree = "<group>"; };
 		439BDAE6CF22ADCF64E375A4C95B03B5 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		44260640CD339F45CE2D39CE922B0AD0 /* SGRoutePlanService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGRoutePlanService.h; sourceTree = "<group>"; };
-		48D7513068793849A9B596C744F7AD77 /* BusSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusSegment.h; sourceTree = "<group>"; };
+		44AAAFA7DB8C9A2F67A6BDDC8ECC070F /* CarMapInfoNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CarMapInfoNode.m; sourceTree = "<group>"; };
 		48F6A1A89A744CC7241F2E9217A94B82 /* Southigs_TiledServiceLayerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Southigs_TiledServiceLayerOperation.h; path = SGTileLayer/Classes/CustomTile/Southigs_TiledServiceLayerOperation.h; sourceTree = "<group>"; };
 		4B01882DCE5B7646EC3F6B0EFCD79763 /* SouthgisTdtType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SouthgisTdtType.h; path = SGTileLayer/Classes/TdtTile/SouthgisTdtType.h; sourceTree = "<group>"; };
 		4E75A90109FC36F626194336D37E535F /* Southgis_TiledServiceLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Southgis_TiledServiceLayer.m; path = SGTileLayer/Classes/CustomTile/Southgis_TiledServiceLayer.m; sourceTree = "<group>"; };
 		52182E764B054846827A6E033EDE7AFD /* Southgis_TiledServiceLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Southgis_TiledServiceLayer.h; path = SGTileLayer/Classes/CustomTile/Southgis_TiledServiceLayer.h; sourceTree = "<group>"; };
 		53A277C487D9A221F0ED7A03796C7871 /* Pods-SGRoutePlan_OC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGRoutePlan_OC_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		545036CEE552E4126DB542D7E5C205A1 /* TdtPOIResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TdtPOIResult.h; sourceTree = "<group>"; };
 		565CD4BC16FCE658B8D58EFD441289C5 /* SKSTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKSTableView-prefix.pch"; sourceTree = "<group>"; };
-		5860DE92801DA4D36ACD8A7835CC722B /* SGRoutePlanUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGRoutePlanUtil.m; sourceTree = "<group>"; };
 		58662A257A9238216C400FFABB3D910C /* expandableImage.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = expandableImage.png; path = SKSTableView/expandableImage.png; sourceTree = "<group>"; };
 		5880F5AC329994590F0DB748976DA0CF /* SGTileLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGTileLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A1760D49F406D7EB884CAAF2A4A961 /* Pods-SGRoutePlan_OC_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGRoutePlan_OC_Example-resources.sh"; sourceTree = "<group>"; };
+		59711341EFE60A3E5E7A266A1C174FCA /* ReverseAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReverseAddress.h; sourceTree = "<group>"; };
 		5A25B739502BA5F8A48BB521A6CCB3FD /* Southgis_WMTSLayerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Southgis_WMTSLayerOperation.m; path = SGTileLayer/Classes/TdtTile/Southgis_WMTSLayerOperation.m; sourceTree = "<group>"; };
-		5AB221F0A462FD0E40AD6ECADC6B7FA3 /* BusSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusSegment.m; sourceTree = "<group>"; };
+		5AD2E9B3FCF90CE6CE22C79CFAD6521C /* BusStation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusStation.h; sourceTree = "<group>"; };
 		5B22B182C90309C537F797063642B2A4 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		5C322CB410AED316E464D1CCF2F55E9B /* SGSWMTSInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SGSWMTSInfo.h; path = SGTileLayer/Classes/SGSWMTS/SGSWMTSInfo.h; sourceTree = "<group>"; };
 		5CA4AFFD50B6468BA0534A5EF04B8E60 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		615965EBBB286E1B15E4A9D2D3D51229 /* SKSTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SKSTableView-dummy.m"; sourceTree = "<group>"; };
-		64A023ABE2EE240D6330D864A955202E /* BusStation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusStation.h; sourceTree = "<group>"; };
 		64B3A762EA3FF8714F3435E0170575ED /* SGTileLayerUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SGTileLayerUtil.h; path = SGTileLayer/Classes/SGTileLayerUtil.h; sourceTree = "<group>"; };
-		6843C83D6E57BDBBB2E302F1305D78CA /* TdtPOIResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TdtPOIResult.h; sourceTree = "<group>"; };
-		72AE47206612BE356A50B2E9FF312A0D /* Enum.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Enum.m; sourceTree = "<group>"; };
-		737AB642519C6B2EB055920BD90023AD /* TdtPOIResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TdtPOIResult.m; sourceTree = "<group>"; };
 		74915213B3E9E0C41E9F575AD2371E1F /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		7534D7D2C815535201458781C0EB9BB2 /* SGTileLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGTileLayer-prefix.pch"; sourceTree = "<group>"; };
 		75AE3599BA184A67B470D8E5C74F5F95 /* Southgis_BdWMTSLayerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Southgis_BdWMTSLayerOperation.h; path = SGTileLayer/Classes/BdTile/Southgis_BdWMTSLayerOperation.h; sourceTree = "<group>"; };
 		77766CBDC2BD4C168F003428ED43595E /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		78FD32E4D3983489B984FD254FE8BA51 /* CarLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CarLine.m; sourceTree = "<group>"; };
 		795F266D7A7E92D977FF11BA5544822D /* SGTileLayerUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SGTileLayerUtil.m; path = SGTileLayer/Classes/SGTileLayerUtil.m; sourceTree = "<group>"; };
 		79BF3409554FDAEA403FF5A548D8E568 /* Pods-SGRoutePlan_OC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SGRoutePlan_OC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7BB1DE333E728671FAA2F570FBDC95DA /* SGRoutePlanService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGRoutePlanService.h; sourceTree = "<group>"; };
 		7C039D3BB2A3C7F60E88C31B21609667 /* SGTileLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SGTileLayer.modulemap; sourceTree = "<group>"; };
 		8045F2D1AAD9F2245DC964F7E78A6822 /* SouthgisTiledMapHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SouthgisTiledMapHelper.h; path = SGTileLayer/Classes/SouthgisTiledMapHelper.h; sourceTree = "<group>"; };
-		810E1E3E599C2EFEE6E5BFD7EBB9871A /* SGXMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGXMLParser.m; sourceTree = "<group>"; };
 		82132AA545BB44EF1D9B47EC0C4FEA94 /* SKSTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKSTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A49531F8F3F532555F50275DD2E678 /* SGRoutePlan_OC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGRoutePlan_OC-umbrella.h"; sourceTree = "<group>"; };
 		856898CF8F720C71D3FAD0010DAB91B7 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		85AB453A47C718A4809BFC445D30DCD7 /* CarLineNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CarLineNode.h; sourceTree = "<group>"; };
+		860EAB611E998697A95579B8367C948A /* TdtPOISearchKeyWord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TdtPOISearchKeyWord.m; sourceTree = "<group>"; };
 		8708B70D777DA0DE8F1DAC32694F21AA /* SKSTableViewCellIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSTableViewCellIndicator.h; path = SKSTableView/SKSTableViewCellIndicator.h; sourceTree = "<group>"; };
 		8842CFF33B7524E3A46DFF14A7F00B57 /* Pods-SGRoutePlan_OC_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SGRoutePlan_OC_Example-umbrella.h"; sourceTree = "<group>"; };
 		895B68D6E19B23310D22F5D0A3CD8DB6 /* expandableImage@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "expandableImage@2x.png"; path = "SKSTableView/expandableImage@2x.png"; sourceTree = "<group>"; };
 		89D5BDADF558F6B331A02862FBF30C84 /* Pods-SGRoutePlan_OC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGRoutePlan_OC_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8A49A1026105A436A4FD7EB88C64BCDA /* BusSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusSegment.h; sourceTree = "<group>"; };
 		8BD429AC046D15A0A8D5DC47F35FA42D /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		8DFF8B3EEEE79B250FCB385E8854B11D /* SGRoutePlan_OC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGRoutePlan_OC-prefix.pch"; sourceTree = "<group>"; };
 		8EEDFD2312578DD6A559B05D9C9A3EA5 /* SouthgisTdt_LayerInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SouthgisTdt_LayerInfo.m; path = SGTileLayer/Classes/TdtTile/SouthgisTdt_LayerInfo.m; sourceTree = "<group>"; };
 		9176ADC0C118694E64F0BCDB05E5D856 /* SouthgisTianDiTuWMTSLayerInfoDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SouthgisTianDiTuWMTSLayerInfoDelegate.m; path = SGTileLayer/Classes/TdtTile/SouthgisTianDiTuWMTSLayerInfoDelegate.m; sourceTree = "<group>"; };
 		91D4D5D5502FB213FEAE7DCEFE372A56 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B9ADC5CAD422309196C0C3899A3F42 /* CarLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CarLine.h; sourceTree = "<group>"; };
 		94AC3EED8BEC7D8FAB939FC04DC1E42D /* Southgis_TiledServiceLayerInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Southgis_TiledServiceLayerInfo.m; path = SGTileLayer/Classes/CustomTile/Southgis_TiledServiceLayerInfo.m; sourceTree = "<group>"; };
 		9511F2EFF54C7072E76BBEFB384BF59E /* SGSWMTSLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SGSWMTSLayer.m; path = SGTileLayer/Classes/SGSWMTS/SGSWMTSLayer.m; sourceTree = "<group>"; };
-		98CF9745E926DBE7C8C2936C47DB652C /* CarLineNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CarLineNode.h; sourceTree = "<group>"; };
+		972424CF3383103E82F6DF0F2A598C1D /* SGRoutePlanService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGRoutePlanService.m; sourceTree = "<group>"; };
 		995B3DCD802B4D054B92E3E2FF18C444 /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
-		9A509D7353864ADA058612A070770634 /* BusLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusLine.h; sourceTree = "<group>"; };
 		9B7EBB6AC486BB4038B501D42E2C1BA5 /* SGRoutePlan_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGRoutePlan_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCDC8381AA25D3718AC82966D8F5EEB /* SouthgisBdWMTSLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SouthgisBdWMTSLayer.h; path = SGTileLayer/Classes/BdTile/SouthgisBdWMTSLayer.h; sourceTree = "<group>"; };
 		9C3E587D18B245C8192A857F28B470FE /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		9CAE81AAE63669271DDA16228310BD69 /* SouthgisTdtType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SouthgisTdtType.m; path = SGTileLayer/Classes/TdtTile/SouthgisTdtType.m; sourceTree = "<group>"; };
-		A4817A8C1528DE99741A2CF376B7CC94 /* BusStation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusStation.m; sourceTree = "<group>"; };
+		9ED0F57D879D1164819DC1DC31FA9798 /* BusLineSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusLineSearch.h; sourceTree = "<group>"; };
+		A0383CB2AF4EBB066D80168697307F10 /* CarLineSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CarLineSearch.h; sourceTree = "<group>"; };
 		A4F52220114A4201637AA2DFD4537572 /* Pods-SGRoutePlan_OC_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SGRoutePlan_OC_Example.modulemap"; sourceTree = "<group>"; };
-		A5553DB8BF9AB48C17B9B43BFB8787DD /* AGSPoint+AGSPoint_Ext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AGSPoint+AGSPoint_Ext.m"; sourceTree = "<group>"; };
+		AA57E7A31039A319C1DDEA5F08C2667B /* SGRoutePlanUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGRoutePlanUtil.m; sourceTree = "<group>"; };
 		AB76A403E986EC3FFF888D9CF55A01B8 /* SouthgisTdt_TileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SouthgisTdt_TileLayer.h; path = SGTileLayer/Classes/TdtTile/SouthgisTdt_TileLayer.h; sourceTree = "<group>"; };
+		ACA84E14D8BF3BD0FD594F5A29897F06 /* BusStation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusStation.m; sourceTree = "<group>"; };
+		ADA9A74EAA9EF06106EE915A061932B6 /* Enum.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Enum.m; sourceTree = "<group>"; };
+		ADDAD9C786CDDB68896DA13A9176E123 /* SGXMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGXMLParser.m; sourceTree = "<group>"; };
+		AE7AF8E77706EB7DD198DD6E45F4948B /* TdtPOIResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TdtPOIResult.m; sourceTree = "<group>"; };
 		AEFBD3BC897B74C2A46F12B368E10F3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		AF4F9F772BBFF3201E3446102A6C7792 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		AF90E5A00FB89012A2B6C8874FF747D5 /* SGSWMTSInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SGSWMTSInfo.m; path = SGTileLayer/Classes/SGSWMTS/SGSWMTSInfo.m; sourceTree = "<group>"; };
 		AFADCB596E5BC531F5ABF96645AA2544 /* SKSTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SKSTableView.modulemap; sourceTree = "<group>"; };
 		B179B4CCB4A08AACF456BD594D353601 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B21FC92301CD7DAD97E38C0BA5A8BF6E /* Enum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Enum.h; sourceTree = "<group>"; };
+		B3205AA76EFE7EEAA6A9AC6524266FD9 /* ReverseAddressSearchKeyword.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ReverseAddressSearchKeyword.h; sourceTree = "<group>"; };
 		B3F837C75035F699D963A9E745F75B97 /* Southgis_TiledServiceLayerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Southgis_TiledServiceLayerInfo.h; path = SGTileLayer/Classes/CustomTile/Southgis_TiledServiceLayerInfo.h; sourceTree = "<group>"; };
 		B56B5796C0D8DAF93A8C10FCAA5DDAA4 /* SKSTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKSTableViewCell.m; path = SKSTableView/SKSTableViewCell.m; sourceTree = "<group>"; };
 		B5AE49C2A8E917E5CA37A21DE49FA3E0 /* NSDictionary+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+YYAdd.m"; path = "SGTileLayer/Classes/SGSWMTS/NSDictionary+YYAdd.m"; sourceTree = "<group>"; };
-		B7ED768388EC2379311EEC58B561D075 /* SGRoutePlanUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGRoutePlanUtil.h; sourceTree = "<group>"; };
+		B953D9932055D5AB7993FECA3EC49960 /* CarLineSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CarLineSearch.m; sourceTree = "<group>"; };
 		BC1C63A40AE72904B87F37F8201E6077 /* Southgis_TiledServiceLayerInfoOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Southgis_TiledServiceLayerInfoOperation.m; path = SGTileLayer/Classes/CustomTile/Southgis_TiledServiceLayerInfoOperation.m; sourceTree = "<group>"; };
-		BF9BDF425D4A14C3E7A2A86159FAD96D /* SGRoutePlanHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGRoutePlanHeader.h; sourceTree = "<group>"; };
 		BFA0684A6A720E44FC7308565310BCF2 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		BFECC27BD2172DD57652B8D7DE720E6B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		C087887E26D4286BEF3D23524E676FE6 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		C296B6EC8148DB806F56446FAAD8BB99 /* BusLineSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BusLineSearch.h; sourceTree = "<group>"; };
 		C42D4496BAD64BF53FA31B06814AD07E /* Southigs_TiledServiceLayerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Southigs_TiledServiceLayerOperation.m; path = SGTileLayer/Classes/CustomTile/Southigs_TiledServiceLayerOperation.m; sourceTree = "<group>"; };
 		CB3097B9E767748F0F9D7EC9C30C62BC /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB52F2FE63ECB201AEF1B957D4B55C4E /* SouthgisBaseTiledServiceLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SouthgisBaseTiledServiceLayer.m; path = SGTileLayer/Classes/SouthgisBaseTiledServiceLayer.m; sourceTree = "<group>"; };
 		CC895CD9AFC6EE5B23A02471C58AC791 /* SouthgisTdt_TileLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SouthgisTdt_TileLayer.m; path = SGTileLayer/Classes/TdtTile/SouthgisTdt_TileLayer.m; sourceTree = "<group>"; };
-		CE9511217609B69F9080129CF7300148 /* TdtPOISearchKeyWord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TdtPOISearchKeyWord.h; sourceTree = "<group>"; };
 		CFA08F2AA7624033718748AD7F4641EE /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		CFABA67920885CE9CC61ABAB164F0CA9 /* SouthgisTdt_LayerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SouthgisTdt_LayerInfo.h; path = SGTileLayer/Classes/TdtTile/SouthgisTdt_LayerInfo.h; sourceTree = "<group>"; };
 		D09F19577F7AED3D295DCC94B9D19241 /* SGRoutePlan_OC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SGRoutePlan_OC.modulemap; sourceTree = "<group>"; };
 		D2E6457CC38FF80BBCCF05CC829B2693 /* Pods-SGRoutePlan_OC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SGRoutePlan_OC_Example-dummy.m"; sourceTree = "<group>"; };
 		D3DB3B4D53A0DA9363243636CB1B6F89 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		D45E9BB8DD2635B24F4228BB66103E05 /* CarMapInfoNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CarMapInfoNode.h; sourceTree = "<group>"; };
 		DA25E20F093F31B794587D167E326178 /* Southgis_BdWMTSLayerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Southgis_BdWMTSLayerOperation.m; path = SGTileLayer/Classes/BdTile/Southgis_BdWMTSLayerOperation.m; sourceTree = "<group>"; };
 		DCB1F0CF72517956AB8EAEB07A273A6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE447E7625E71323E7CD77198751692F /* ReverseAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReverseAddress.m; sourceTree = "<group>"; };
 		DE4CAC56B32FE8BF3486D2A42F17F8B0 /* Pods-SGRoutePlan_OC_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGRoutePlan_OC_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DF86A8F915862EC25082B90786B1C6CA /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h"; path = "SGTileLayer/Classes/CustomTile/Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h"; sourceTree = "<group>"; };
 		E20203069A89ACE5869DCD3DCC95A27B /* SGTileLayerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SGTileLayerHeader.h; path = SGTileLayer/Classes/SGTileLayerHeader.h; sourceTree = "<group>"; };
@@ -302,21 +312,19 @@
 		E5D9ADCF2001D290AE5616875B1F5FB7 /* SouthgisBdWMTSLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SouthgisBdWMTSLayer.m; path = SGTileLayer/Classes/BdTile/SouthgisBdWMTSLayer.m; sourceTree = "<group>"; };
 		E920F2B353F95374B457F690E2649CA5 /* Southgis_BdWMTSLayerInfoDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Southgis_BdWMTSLayerInfoDelegate.h; path = SGTileLayer/Classes/BdTile/Southgis_BdWMTSLayerInfoDelegate.h; sourceTree = "<group>"; };
 		E923A5708A48263D0F41B3C3B9BA62AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC02C6A2B3DB38C53F468EABC48FD5A0 /* CarLineNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CarLineNode.m; sourceTree = "<group>"; };
 		EC32D82C6F5464E6453E0678A085B2A5 /* SouthgisTianDiTuWMTSLayerInfoDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SouthgisTianDiTuWMTSLayerInfoDelegate.h; path = SGTileLayer/Classes/TdtTile/SouthgisTianDiTuWMTSLayerInfoDelegate.h; sourceTree = "<group>"; };
-		EC42BBD14C23EDEF162DA1847AF9D716 /* CarMapInfoNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CarMapInfoNode.m; sourceTree = "<group>"; };
 		EC7DD843C71840EA4DEC89BD00E8796F /* SKSTableViewCellIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKSTableViewCellIndicator.m; path = SKSTableView/SKSTableViewCellIndicator.m; sourceTree = "<group>"; };
+		F1682EB2C33399AB22A1D75E3658634F /* BusLineSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusLineSearch.m; sourceTree = "<group>"; };
 		F2323581873594928596E70344B6BEC4 /* SKSTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKSTableView.m; path = SKSTableView/SKSTableView.m; sourceTree = "<group>"; };
 		F291B4E61783A37B3F19C2E87605A77D /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
-		F3FE5AD2C4E1CAF8A27192AD9A97A8C3 /* BusLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusLine.m; sourceTree = "<group>"; };
 		F4A8C68F0D4B2504743BDA2D3B396E77 /* SGRoutePlan_OC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SGRoutePlan_OC-dummy.m"; sourceTree = "<group>"; };
+		F6160BFB965CDCC09E0C932767E85623 /* CarLineNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CarLineNode.m; sourceTree = "<group>"; };
+		F6435A7CBBDD8A3FBD3DE6323603E022 /* ReverseAddressSearchKeyword.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReverseAddressSearchKeyword.m; sourceTree = "<group>"; };
+		F6B78FBA732E7878E30488E9F42BD4C8 /* BusSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusSegment.m; sourceTree = "<group>"; };
 		F70CE061E22F0D9304BB2B8BB3252232 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		FABF572D8828A998C616658629BF13F9 /* CarLineSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CarLineSearch.h; sourceTree = "<group>"; };
 		FADF8EE1DBACBD745D873575B952E5D2 /* Pods-SGRoutePlan_OC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SGRoutePlan_OC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FB4CD502C8339D8FEE58789F863E2BBC /* SGTileLayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SGTileLayer.xcconfig; sourceTree = "<group>"; };
 		FC684BA3402007F7D65810144B023767 /* Southgis_WMTSLayerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Southgis_WMTSLayerOperation.h; path = SGTileLayer/Classes/TdtTile/Southgis_WMTSLayerOperation.h; sourceTree = "<group>"; };
-		FCF90DD492A27C3C5BE3B27834A3C0AB /* BusSegmentLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BusSegmentLine.m; sourceTree = "<group>"; };
-		FD8159C0D2666E86EBF47E1E02D73DCE /* Enum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Enum.h; sourceTree = "<group>"; };
 		FDC85DD9A7829B37488C246E72E34131 /* Southgis_TiledServiceLayerInfoOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Southgis_TiledServiceLayerInfoOperation.h; path = SGTileLayer/Classes/CustomTile/Southgis_TiledServiceLayerInfoOperation.h; sourceTree = "<group>"; };
 		FEB54E7ACFE3C338383F7F0E8C5A41FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -404,23 +412,6 @@
 			path = "../Target Support Files/YYModel";
 			sourceTree = "<group>";
 		};
-		15FCBD84F3E94BAC680A64309C21A4ED /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2A07CE04FCC5A9FFA69C83B0842554AA /* AGSPoint+AGSPoint_Ext.h */,
-				A5553DB8BF9AB48C17B9B43BFB8787DD /* AGSPoint+AGSPoint_Ext.m */,
-				FD8159C0D2666E86EBF47E1E02D73DCE /* Enum.h */,
-				72AE47206612BE356A50B2E9FF312A0D /* Enum.m */,
-				BF9BDF425D4A14C3E7A2A86159FAD96D /* SGRoutePlanHeader.h */,
-				B7ED768388EC2379311EEC58B561D075 /* SGRoutePlanUtil.h */,
-				5860DE92801DA4D36ACD8A7835CC722B /* SGRoutePlanUtil.m */,
-				41F2B60F64A68E4153C311431B6E949C /* SGXMLParser.h */,
-				810E1E3E599C2EFEE6E5BFD7EBB9871A /* SGXMLParser.m */,
-				BE54EB0391CEA20643617EF11A471C97 /* Tdt */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		2A9DBC864C14A4A165A4006729491620 /* SKSTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +476,23 @@
 			path = SGTileLayer;
 			sourceTree = "<group>";
 		};
+		372FF99459CD1B739C8CB41E731CD50F /* BUS */ = {
+			isa = PBXGroup;
+			children = (
+				2A456A22C0EDE70EF3E2BDBD16B51243 /* BusLine.h */,
+				139118FA66F9AE90D915BD50792C75A9 /* BusLine.m */,
+				9ED0F57D879D1164819DC1DC31FA9798 /* BusLineSearch.h */,
+				F1682EB2C33399AB22A1D75E3658634F /* BusLineSearch.m */,
+				8A49A1026105A436A4FD7EB88C64BCDA /* BusSegment.h */,
+				F6B78FBA732E7878E30488E9F42BD4C8 /* BusSegment.m */,
+				2263050CE0B429EF7C84E0441A87CD41 /* BusSegmentLine.h */,
+				3D6B9FFD39660A2DDB7516DCED0ED1A9 /* BusSegmentLine.m */,
+				5AD2E9B3FCF90CE6CE22C79CFAD6521C /* BusStation.h */,
+				ACA84E14D8BF3BD0FD594F5A29897F06 /* BusStation.m */,
+			);
+			path = BUS;
+			sourceTree = "<group>";
+		};
 		3D1750D089661684E463440ED73464AA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,6 +501,14 @@
 				AEFBD3BC897B74C2A46F12B368E10F3F /* QuartzCore.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		43803C8409E30861751F7660014F934E /* SGRoutePlan_OC */ = {
+			isa = PBXGroup;
+			children = (
+				92B0B7DCB62D2974EA8F10D763D5AD90 /* Classes */,
+			);
+			path = SGRoutePlan_OC;
 			sourceTree = "<group>";
 		};
 		46EE4224FC233ACEC82799114B095425 /* Resources */ = {
@@ -510,23 +526,6 @@
 				733D7C73DE2E01818641F079878E7609 /* Pods-SGRoutePlan_OC_Example */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6D0D0DDF86CF43A67DA86F22DDF6AD4D /* BUS */ = {
-			isa = PBXGroup;
-			children = (
-				9A509D7353864ADA058612A070770634 /* BusLine.h */,
-				F3FE5AD2C4E1CAF8A27192AD9A97A8C3 /* BusLine.m */,
-				C296B6EC8148DB806F56446FAAD8BB99 /* BusLineSearch.h */,
-				41CA4FB903C5EA13CA1A343910094120 /* BusLineSearch.m */,
-				48D7513068793849A9B596C744F7AD77 /* BusSegment.h */,
-				5AB221F0A462FD0E40AD6ECADC6B7FA3 /* BusSegment.m */,
-				36D8C132A6F2FD17B73C8B9417FFF415 /* BusSegmentLine.h */,
-				FCF90DD492A27C3C5BE3B27834A3C0AB /* BusSegmentLine.m */,
-				64A023ABE2EE240D6330D864A955202E /* BusStation.h */,
-				A4817A8C1528DE99741A2CF376B7CC94 /* BusStation.m */,
-			);
-			path = BUS;
 			sourceTree = "<group>";
 		};
 		733D7C73DE2E01818641F079878E7609 /* Pods-SGRoutePlan_OC_Example */ = {
@@ -573,21 +572,6 @@
 			path = "../Target Support Files/SKSTableView";
 			sourceTree = "<group>";
 		};
-		845EDECE115A757DF1B5E4572261AC49 /* Car */ = {
-			isa = PBXGroup;
-			children = (
-				93B9ADC5CAD422309196C0C3899A3F42 /* CarLine.h */,
-				0BF49709EE03DDCCCC6D121BE9227908 /* CarLine.m */,
-				98CF9745E926DBE7C8C2936C47DB652C /* CarLineNode.h */,
-				EC02C6A2B3DB38C53F468EABC48FD5A0 /* CarLineNode.m */,
-				FABF572D8828A998C616658629BF13F9 /* CarLineSearch.h */,
-				2C4912AC0BB09C42668CBC256C44507B /* CarLineSearch.m */,
-				32823142315428568E62DD531782684B /* CarMapInfoNode.h */,
-				EC42BBD14C23EDEF162DA1847AF9D716 /* CarMapInfoNode.m */,
-			);
-			path = Car;
-			sourceTree = "<group>";
-		};
 		87ACC9DAC482485906D265E164B6D7F0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,17 +586,6 @@
 			path = "Example/Pods/Target Support Files/SGRoutePlan_OC";
 			sourceTree = "<group>";
 		};
-		889164830E60D70CAFA057619E6D5F77 /* POI */ = {
-			isa = PBXGroup;
-			children = (
-				6843C83D6E57BDBBB2E302F1305D78CA /* TdtPOIResult.h */,
-				737AB642519C6B2EB055920BD90023AD /* TdtPOIResult.m */,
-				CE9511217609B69F9080129CF7300148 /* TdtPOISearchKeyWord.h */,
-				40A05B60CB249C2EB980D86449544873 /* TdtPOISearchKeyWord.m */,
-			);
-			path = POI;
-			sourceTree = "<group>";
-		};
 		894A9BA571E7AC35248EEB4F78F834F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,6 +597,27 @@
 				CB3097B9E767748F0F9D7EC9C30C62BC /* YYModel.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		92B0B7DCB62D2974EA8F10D763D5AD90 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0F9D5BA42F6B9EE1662E767CD58D5169 /* AGSPoint+AGSPoint_Ext.h */,
+				1527B839D631F702A8302F780EAD8C50 /* AGSPoint+AGSPoint_Ext.m */,
+				B21FC92301CD7DAD97E38C0BA5A8BF6E /* Enum.h */,
+				ADA9A74EAA9EF06106EE915A061932B6 /* Enum.m */,
+				59711341EFE60A3E5E7A266A1C174FCA /* ReverseAddress.h */,
+				DE447E7625E71323E7CD77198751692F /* ReverseAddress.m */,
+				B3205AA76EFE7EEAA6A9AC6524266FD9 /* ReverseAddressSearchKeyword.h */,
+				F6435A7CBBDD8A3FBD3DE6323603E022 /* ReverseAddressSearchKeyword.m */,
+				0BA51C69C3545E13DD2069BC5E3F58C7 /* SGRoutePlanHeader.h */,
+				37D87E885299EB478E5C233E7667CA0D /* SGRoutePlanUtil.h */,
+				AA57E7A31039A319C1DDEA5F08C2667B /* SGRoutePlanUtil.m */,
+				2958B18BE3013869C29D50C9F022D347 /* SGXMLParser.h */,
+				ADDAD9C786CDDB68896DA13A9176E123 /* SGXMLParser.m */,
+				DBBBEAAA06FEA8D004FF94F7A9B499A3 /* Tdt */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		94CB07E9314C43CA5A1D76BF45494E9E /* SVProgressHUD */ = {
@@ -657,6 +651,17 @@
 			path = "../Target Support Files/SGTileLayer";
 			sourceTree = "<group>";
 		};
+		99DC4D8CC282EBB136923E05184B0BE1 /* POI */ = {
+			isa = PBXGroup;
+			children = (
+				545036CEE552E4126DB542D7E5C205A1 /* TdtPOIResult.h */,
+				AE7AF8E77706EB7DD198DD6E45F4948B /* TdtPOIResult.m */,
+				40BEF932AB0D7C0BA453D18D17332543 /* TdtPOISearchKeyWord.h */,
+				860EAB611E998697A95579B8367C948A /* TdtPOISearchKeyWord.m */,
+			);
+			path = POI;
+			sourceTree = "<group>";
+		};
 		A0C37E0EF57EF4767A4A1B462F0FC7F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,14 +669,6 @@
 				3D1750D089661684E463440ED73464AA /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A76BE7E018F91CCF2E141CDF77B991C5 /* SGRoutePlan_OC */ = {
-			isa = PBXGroup;
-			children = (
-				15FCBD84F3E94BAC680A64309C21A4ED /* Classes */,
-			);
-			path = SGRoutePlan_OC;
 			sourceTree = "<group>";
 		};
 		A87848F16FC5FCEE654255E2DA886ED3 /* YYModel */ = {
@@ -687,18 +684,6 @@
 			path = YYModel;
 			sourceTree = "<group>";
 		};
-		BE54EB0391CEA20643617EF11A471C97 /* Tdt */ = {
-			isa = PBXGroup;
-			children = (
-				44260640CD339F45CE2D39CE922B0AD0 /* SGRoutePlanService.h */,
-				3FD84B19025337483FEF6C637F0190C8 /* SGRoutePlanService.m */,
-				6D0D0DDF86CF43A67DA86F22DDF6AD4D /* BUS */,
-				845EDECE115A757DF1B5E4572261AC49 /* Car */,
-				889164830E60D70CAFA057619E6D5F77 /* POI */,
-			);
-			path = Tdt;
-			sourceTree = "<group>";
-		};
 		BED7BCF20D4E775B5B0B4BBA460C6833 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -710,11 +695,23 @@
 		C3CC26A7BDEE6456B20401567F1A6D85 /* SGRoutePlan_OC */ = {
 			isa = PBXGroup;
 			children = (
-				A76BE7E018F91CCF2E141CDF77B991C5 /* SGRoutePlan_OC */,
+				43803C8409E30861751F7660014F934E /* SGRoutePlan_OC */,
 				87ACC9DAC482485906D265E164B6D7F0 /* Support Files */,
 			);
 			name = SGRoutePlan_OC;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		DBBBEAAA06FEA8D004FF94F7A9B499A3 /* Tdt */ = {
+			isa = PBXGroup;
+			children = (
+				7BB1DE333E728671FAA2F570FBDC95DA /* SGRoutePlanService.h */,
+				972424CF3383103E82F6DF0F2A598C1D /* SGRoutePlanService.m */,
+				372FF99459CD1B739C8CB41E731CD50F /* BUS */,
+				F1E979ECFEDEC94F66A360F833676CDF /* Car */,
+				99DC4D8CC282EBB136923E05184B0BE1 /* POI */,
+			);
+			path = Tdt;
 			sourceTree = "<group>";
 		};
 		E7CB095D018C1256F882CF2C7F81D2E0 /* Resources */ = {
@@ -723,6 +720,21 @@
 				AF4F9F772BBFF3201E3446102A6C7792 /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		F1E979ECFEDEC94F66A360F833676CDF /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				023805B342FC1B68D8E364235C43AC99 /* CarLine.h */,
+				78FD32E4D3983489B984FD254FE8BA51 /* CarLine.m */,
+				85AB453A47C718A4809BFC445D30DCD7 /* CarLineNode.h */,
+				F6160BFB965CDCC09E0C932767E85623 /* CarLineNode.m */,
+				A0383CB2AF4EBB066D80168697307F10 /* CarLineSearch.h */,
+				B953D9932055D5AB7993FECA3EC49960 /* CarLineSearch.m */,
+				D45E9BB8DD2635B24F4228BB66103E05 /* CarMapInfoNode.h */,
+				44AAAFA7DB8C9A2F67A6BDDC8ECC070F /* CarMapInfoNode.m */,
+			);
+			path = Car;
 			sourceTree = "<group>";
 		};
 		FDD3CF9897124DBE8A2D0E2DD87EEE00 /* Pods */ = {
@@ -748,31 +760,6 @@
 				B2D7FDE0D26C9382D1029736175FFF54 /* SVProgressHUD-umbrella.h in Headers */,
 				954A236E351E4377F636A91A7D5704FA /* SVProgressHUD.h in Headers */,
 				95D5D54FC213E90726360802DFE61C9E /* SVRadialGradientLayer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		159F57F72CC07FF8718CCAFCFB135B77 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F030908CC87A7F88D3E163554CB5A578 /* AGSPoint+AGSPoint_Ext.h in Headers */,
-				EAA36528FB68976A8ED74F09A9D2B4EF /* BusLine.h in Headers */,
-				FF7B8BD83FDFFE38D521209E5ACC8833 /* BusLineSearch.h in Headers */,
-				AC2B9543AA153355E2B73CF2EADBC773 /* BusSegment.h in Headers */,
-				B9F342F52B688DC40B3C226E472D2BCE /* BusSegmentLine.h in Headers */,
-				CC5B802699B31FB70CC89B32B6828504 /* BusStation.h in Headers */,
-				9BF928043186659996B224CD2A26E9FE /* CarLine.h in Headers */,
-				0F2F116FB0FEBCB095EE848458C4F6ED /* CarLineNode.h in Headers */,
-				EF6C4843AB6DBA5A87FFDFEC6051A5F5 /* CarLineSearch.h in Headers */,
-				718C741BEAE785F002FBA69075B0BC19 /* CarMapInfoNode.h in Headers */,
-				0D6C7401D8AD477CFC92FAB3A9933889 /* Enum.h in Headers */,
-				9E39B05EF43340E093202253685A1A5B /* SGRoutePlan_OC-umbrella.h in Headers */,
-				FFB4BBBA044AC925A04A35EC02B626FB /* SGRoutePlanHeader.h in Headers */,
-				F1BF13012F88449E3F0E656A561B34C4 /* SGRoutePlanService.h in Headers */,
-				6F45D7C24AA857C5CC28D13FB0D06FE5 /* SGRoutePlanUtil.h in Headers */,
-				CAB852014F17BA988F8F04574A6FD14F /* SGXMLParser.h in Headers */,
-				99ED2592435A0944D060979063331FF6 /* TdtPOIResult.h in Headers */,
-				2996B0D687145604308CE32ED74EE11E /* TdtPOISearchKeyWord.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,6 +822,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E73881461A16787C4F6B889B3F64829E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C937A7786524EAE33E02B78E1172DB0 /* AGSPoint+AGSPoint_Ext.h in Headers */,
+				1A991AD7E2CAD591FAAA83D3BCA665B5 /* BusLine.h in Headers */,
+				49B351B477D72F21F24EE33BF1ABECD2 /* BusLineSearch.h in Headers */,
+				2C810EEDA8EC8E003B5DE57DC194671C /* BusSegment.h in Headers */,
+				B475BB24FED7865D67E4A623C1152229 /* BusSegmentLine.h in Headers */,
+				C1F4BDD442B8835A7902DA6D8806CC95 /* BusStation.h in Headers */,
+				802C30B35C76E6B5A6B4326B7D719D8B /* CarLine.h in Headers */,
+				63C8856695DBEBDE422D20AECA99D190 /* CarLineNode.h in Headers */,
+				F983E7C8830A3ED905F5585741A8E112 /* CarLineSearch.h in Headers */,
+				C5C7A1A0E30C4B4851685230C41CCB1D /* CarMapInfoNode.h in Headers */,
+				7E077EA6685E030F136F5C7C4D2A3AA2 /* Enum.h in Headers */,
+				F7A11035276D4BE0EBADABE953C9271B /* ReverseAddress.h in Headers */,
+				D210D1D26AC1BB194A094293D86E2A74 /* ReverseAddressSearchKeyword.h in Headers */,
+				B70769DDE710F89FE8862397E8608476 /* SGRoutePlan_OC-umbrella.h in Headers */,
+				C302A5ED680630B206038F7E1283F2DA /* SGRoutePlanHeader.h in Headers */,
+				ED6DE605E543B8218E413CF87ACBCFB6 /* SGRoutePlanService.h in Headers */,
+				3B10DE9BCA30D28402A177F612458E36 /* SGRoutePlanUtil.h in Headers */,
+				F06292148775D73C20E7394703CA8702 /* SGXMLParser.h in Headers */,
+				654981763929F2353948E16669F875B4 /* TdtPOIResult.h in Headers */,
+				DE8BDC81FA2A0914AA2DA8680D1107DF /* TdtPOISearchKeyWord.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -894,9 +908,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64695838C57CDC44C86372444C53C8DD /* Build configuration list for PBXNativeTarget "SGRoutePlan_OC" */;
 			buildPhases = (
-				D9776EE962A17D39B151F4093B4A1F99 /* Sources */,
+				DA04C416E1578924683C8FB81670CD5A /* Sources */,
 				EDD295C1CB0EC143A8BF8BAB21A1B752 /* Frameworks */,
-				159F57F72CC07FF8718CCAFCFB135B77 /* Headers */,
+				E73881461A16787C4F6B889B3F64829E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1057,27 +1071,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9776EE962A17D39B151F4093B4A1F99 /* Sources */ = {
+		DA04C416E1578924683C8FB81670CD5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D4EE25BA0B6B9D9E3AA13C0E9FD4BC /* AGSPoint+AGSPoint_Ext.m in Sources */,
-				88045BDBCD683CAD3EDF9C9D221FEC10 /* BusLine.m in Sources */,
-				7581661B5A50C4552999053B99002D12 /* BusLineSearch.m in Sources */,
-				B319DFB146DFE19D5096FC4D878F671F /* BusSegment.m in Sources */,
-				74B2BF2092CB8B8DF6EE5CAA632DDFC4 /* BusSegmentLine.m in Sources */,
-				F95BF3B9EE334786DEB0B980B361FA01 /* BusStation.m in Sources */,
-				13FEA2229E953183B2636358E432EBDC /* CarLine.m in Sources */,
-				B272CA02551B86808A3AF5AD93140797 /* CarLineNode.m in Sources */,
-				7A284612E6C976313622F6E33446FB64 /* CarLineSearch.m in Sources */,
-				015E9599AE91972E802283CEB89E8D99 /* CarMapInfoNode.m in Sources */,
-				78AE6A7C10927283F03296198DB52975 /* Enum.m in Sources */,
-				85792EE8CB49073DF1071E50C9C50AF8 /* SGRoutePlan_OC-dummy.m in Sources */,
-				9FDD0F2E5209C6DD7BE2848B61F57DA9 /* SGRoutePlanService.m in Sources */,
-				E2B9DFB4E9786694EFAB56EF1ABA877D /* SGRoutePlanUtil.m in Sources */,
-				61145A75847EA23FAA7BD59FF0EB7B85 /* SGXMLParser.m in Sources */,
-				A1D5C71A4B7666724C3B9AB2D076AC9F /* TdtPOIResult.m in Sources */,
-				047F15FDA0BF11D499C98F053FA23FE6 /* TdtPOISearchKeyWord.m in Sources */,
+				8AE13B691AC465BE7BC4A5E331F900ED /* AGSPoint+AGSPoint_Ext.m in Sources */,
+				86A828451AED6E5144587875CE1607F6 /* BusLine.m in Sources */,
+				085411796FB094D0D3588DAB68D6C6E4 /* BusLineSearch.m in Sources */,
+				D6C76DAD1750364E773BCB78D8F2E6AB /* BusSegment.m in Sources */,
+				710B06615C3F3F71C0FB8734C31FC03E /* BusSegmentLine.m in Sources */,
+				1F6BD5FCC238F3DBA10F33668CC590B1 /* BusStation.m in Sources */,
+				D0DF7DA1EA63CAC69B950A1E7407DDC3 /* CarLine.m in Sources */,
+				DF9437C8CCAF9F4C3BDD46AA2C5A0F42 /* CarLineNode.m in Sources */,
+				2E47D89DBDEBC4FAEC1A2007399B213E /* CarLineSearch.m in Sources */,
+				EF4E8081FC27542E122A5FD2E3D14CE6 /* CarMapInfoNode.m in Sources */,
+				EE8AFC73AA53D59A454AC40CC24A96C8 /* Enum.m in Sources */,
+				87B7DF2D7919CA331801CE0C959E22AB /* ReverseAddress.m in Sources */,
+				27438E07ADC3713B755FA09F6FE9F312 /* ReverseAddressSearchKeyword.m in Sources */,
+				DB48B8B305662D5CFE89388A61D8820C /* SGRoutePlan_OC-dummy.m in Sources */,
+				F6566A4371B0FD3893655D27C80A67BE /* SGRoutePlanService.m in Sources */,
+				974ADACD1DA3D2F99E493DF2EA267D97 /* SGRoutePlanUtil.m in Sources */,
+				B1432C97A06E4DD9CA9EEF771FC336E4 /* SGXMLParser.m in Sources */,
+				3FACB35950E7661567573EACAEE667EF /* TdtPOIResult.m in Sources */,
+				D5377471D6407AD665E17267838FDD9A /* TdtPOISearchKeyWord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1220,7 +1236,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/SGTileLayer/SGTileLayer.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SGTileLayer;
@@ -1428,7 +1443,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/SGTileLayer/SGTileLayer.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SGTileLayer;

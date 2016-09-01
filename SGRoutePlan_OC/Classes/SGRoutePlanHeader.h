@@ -24,5 +24,7 @@
 #import "CarLineSearch.h"
 #import "CarMapInfoNode.h"
 #import "Enum.h"
+#import "ReverseAddress.h"
+#import "ReverseAddressSearchKeyword.h"
 
 #endif /* SGRoutePlanHeader_h */

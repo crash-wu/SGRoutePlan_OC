@@ -13,6 +13,8 @@
 #import "BusLineSearch.h"
 #import "CarLineSearch.h"
 #import "TdtPOISearchKeyWord.h"
+#import "ReverseAddress.h"
+#import "ReverseAddressSearchKeyword.h"
 #import <YYModel/YYModel.h>
 
 /**
@@ -91,5 +93,16 @@ typedef NS_ENUM(NSInteger, SouthgisErrorCode) {
 (nullable BusLineSearch *)entity success:
 (nonnull void(^) (NSArray<BusLine *> * _Nullable carline ))success failed:
 (nonnull FailedBlock)failed;
+
+/**
+ *  @author crash         crash_wu@163.com   , 16-09-01 11:09:44
+ *
+ *  @brief  逆地址编码
+ *
+ *  @param key    逆地址编码请求实体
+ *  @param fail   请求成功返回bolck
+ *  @param failed 请求失败返回bolck
+ */
+-(void)getCode:(ReverseAddressSearchKeyword *)entity success:(void (^)(ReverseAddress * address))success fail:(nonnull FailedBlock)failed;
 
 @end

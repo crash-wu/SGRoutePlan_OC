@@ -17,6 +17,8 @@
 
 @property(nonatomic,strong,nonnull) CarLineSearch *carKey;
 
+@property(nonatomic,strong,nonnull) ReverseAddressSearchKeyword *gecodeKey;
+
 @end
 
 @implementation MapViewController
@@ -56,11 +58,29 @@
     self.carBtn.backgroundColor = [UIColor blueColor];
     [self.carBtn addTarget:self action:@selector(carSearch:) forControlEvents:UIControlEventTouchUpInside];
     
+    self.getCode = [UIButton buttonWithType: UIButtonTypeCustom];
+    [self.view addSubview:self.getCode];
+    self.getCode.frame = CGRectMake(210, 0, 70, 50);
+    [self.getCode setTitle:@"逆地址" forState:UIControlStateNormal];
+    [self.getCode setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.getCode.backgroundColor = [UIColor blueColor];
+    [self.getCode addTarget:self action:@selector(getCodeSearch:) forControlEvents:UIControlEventTouchUpInside];
+    
+
+    
+    
     [[SGTileLayerUtil sharedInstance] loadTdtTileLayer:WMTS_VECTOR_2000 andMapView:self.mapView];
     
     [self zoomToChineseEnvelopeCGCS2000];
     
     
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.resultView = [[GetCodeResultView alloc ]initWithFrame:CGRectMake(0, self.view.frame.size.height - 100, self.view.frame.size.width, 100) ];
+    [self.view addSubview:self.resultView];
+    self.resultView.hidden = YES;
 }
 
 
@@ -72,6 +92,32 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)getCodeSearch:(UIButton *)button{
+    [SVProgressHUD showWithStatus:@"加载.."];
+    __weak typeof(&* self)weak = self;
+    self.gecodeKey = [[ReverseAddressSearchKeyword alloc]init  ];
+    self.gecodeKey.lon = 113.3714941059775;
+    self.gecodeKey.lat = 23.06889937192582;
+    [[SGRoutePlanService shareInstance]getCode:self.gecodeKey success:^(ReverseAddress *address) {
+        
+        [SVProgressHUD showSuccessWithStatus:@"成功"];
+        
+        
+        __strong typeof(&*self) strong = weak;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            strong.resultView.hidden = NO;
+            strong.resultView.nameLb.text = address.addressComponent.poi;
+            strong.resultView.addressLb.text = address.formatted_address;
+            
+        });
+
+        
+    } fail:^(id obj) {
+        [SVProgressHUD showErrorWithStatus:@"失败"];
+    }];
 }
 
 -(void)poiSearch:(UIButton *)button{

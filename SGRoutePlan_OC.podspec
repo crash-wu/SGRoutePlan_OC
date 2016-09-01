@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SGRoutePlan_OC'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '天地图POI搜索，公交路线搜索，驾车路线搜索,逆地址编码等服务工具.'
 
 # This description is used to generate tags and improve search results.

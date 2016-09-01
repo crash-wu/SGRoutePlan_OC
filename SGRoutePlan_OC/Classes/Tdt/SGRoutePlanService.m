@@ -252,7 +252,71 @@
     }] resume];
 }
 
+/**
+ *  @author crash         crash_wu@163.com   , 16-09-01 11:09:44
+ *
+ *  @brief  逆地址编码
+ *
+ *  @param key    逆地址编码请求实体
+ *  @param fail   请求成功返回bolck
+ *  @param failed 请求失败返回bolck
+ */
+-(void)getCode:(ReverseAddressSearchKeyword *)entity success:(void (^)(ReverseAddress * address))success fail:(nonnull FailedBlock)failed{
+    
+    
+    NSString *postStr = [[entity yy_modelToJSONString]stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    
+    
+    NSString *urlStr = GET_TIANDITU_SEARCH_URL(@"geocode",postStr);
+    
+    [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:urlStr] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        
+        if (error) {
+            if (failed) {
+                failed(error);
+            }
+            return ;
+        }
+        
+        if (!data || data.length == 0) {
+            if (failed) {
+                NSError *error = [NSError errorWithDomain:SouthgisErrorDomain code:BaiduWebServerErrorNullResponse userInfo:@{@"message": @"空数据"}];
+                failed(error);
+            }
+            return ;
+        }
+        
+        id json;
+        if ([data isKindOfClass:[NSData class]]) {
+            json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+        }
+        
+        NSDictionary *addressInfo = [json objectForKey:@"result"];
+        
+        if (addressInfo == nil) {
+            if (failed) {
+                
+                NSError *error = [NSError errorWithDomain:SouthgisErrorDomain code:BaiduWebServerErrorNullResponse userInfo:@{@"message": @"空数据"}];
+                
+                failed(error);
+            }
+            
+            return ;
+        }
+        
+        ReverseAddress *address = [ ReverseAddress yy_modelWithJSON:addressInfo];
 
+        if (address != nil) {
+            if (success) success(address);
+            
+        }else{
+            if (failed) failed(nil);
+        }
+        
+    }] resume];
+
+}
 
 
 @end

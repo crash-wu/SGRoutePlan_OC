@@ -2,6 +2,8 @@
 
 #import "AGSPoint+AGSPoint_Ext.h"
 #import "Enum.h"
+#import "ReverseAddress.h"
+#import "ReverseAddressSearchKeyword.h"
 #import "SGRoutePlanHeader.h"
 #import "SGRoutePlanUtil.h"
 #import "SGXMLParser.h"
