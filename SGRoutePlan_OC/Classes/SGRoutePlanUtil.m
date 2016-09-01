@@ -295,7 +295,7 @@
     //先清除图层
     [mapView removeMapLayerWithName:POI_POPO_SELECT_LAYER_NAME];
     
-    AGSGroupLayer *symbolLayer = [self addPinToMapView:[[AGSGraphicsLayer alloc] init] andPoi:poi andMapView:mapView andImageName:imageName];
+    AGSGraphicsLayer *symbolLayer = [self addPinToMapView:[[AGSGraphicsLayer alloc] init] andPoi:poi andMapView:mapView andImageName:imageName];
     
     [mapView addMapLayer:symbolLayer withName:POI_POPO_SELECT_LAYER_NAME];
     
@@ -531,7 +531,7 @@
 (nonnull NSString *)lonlats andMapView:
 (nonnull AGSMapView *)mapView{
     
-    NSMutableArray<NSString *> *lonlatArray = [lonlats componentsSeparatedByString:@";"];
+    NSMutableArray<NSString *> * lonlatArray = [[lonlats componentsSeparatedByString:@";"] mutableCopy];
     
     NSMutableArray<AGSPoint *> *points = [NSMutableArray array];
     

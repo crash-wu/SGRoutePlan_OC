@@ -20,7 +20,7 @@
 /**
  *  Handler处理失败时调用的Block
  */
-typedef  void  ( ^FailedBlock )(id obj);
+typedef  void  ( ^FailedBlock )( id  obj);
 
 
 
@@ -47,7 +47,7 @@ typedef NS_ENUM(NSInteger, SouthgisErrorCode) {
  *  @brief  单例
  *
  */
-+(nonnull instancetype) shareInstance;
++(nonnull  instancetype) shareInstance;
 
 
 /**

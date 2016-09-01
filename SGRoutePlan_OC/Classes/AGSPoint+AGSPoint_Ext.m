@@ -24,7 +24,7 @@
     AGSSpatialReference *spa = [[AGSSpatialReference alloc]initWithWKID:102100];
     AGSGeometryEngine *geoEng = [AGSGeometryEngine defaultGeometryEngine];
     
-    AGSPoint * webPoint = [geoEng projectGeometry:self toSpatialReference:spa];
+    AGSPoint * webPoint =(AGSPoint*) [geoEng projectGeometry:self toSpatialReference:spa];
     
     return webPoint;
     
@@ -43,7 +43,7 @@
     AGSSpatialReference *spa = [[AGSSpatialReference alloc]initWithWKID:4490];
     AGSGeometryEngine *geoEng = [AGSGeometryEngine defaultGeometryEngine];
     
-    AGSPoint * point = [geoEng projectGeometry:self toSpatialReference:spa];
+    AGSPoint * point =(AGSPoint *) [geoEng projectGeometry:self toSpatialReference:spa];
     return  point;
 }
 
